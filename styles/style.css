@@ -1,0 +1,128 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    margin: 0;
+    border-top: 5px solid gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/b1.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:focus, select:focus, input:focus {outline:0;}
+
+    /* media queries */    
+    @media(max-width: 900px){
+        .footer{
+            flex-direction: column-reverse;
+        }
+            .footer_copyright_author{
+                width: 100%;
+                flex-direction: row;
+            }
+                .fELem0{
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                }
+            .footer_carousel{
+                width: 100%;
+            }    
+    }   
+    @media(max-width: 600px){
+        .heading_block{
+            justify-content: flex-end;
+            margin-bottom: 3%;
+        }
+        #selectCheckSheet{
+            height: 300px;
+        }
+            .select_heading{
+                height: 20%;
+            }
+            .select_content{
+                height: 77%;
+            }
+                .select_content_Sub{
+                    height: 25%;
+                }
+                    .selElemSub0{
+                        height: 85%;
+                    }
+                .select_content_property{
+                    height: 75%;
+                    flex-direction: column;
+                }
+                    .selElemProp0{
+                        width: 100%;
+                        height: 30%;
+                    }
+        .pdf_block{
+            margin-top: 5%;
+        }  
+        .answerInput_block{
+            margin-top: 5%;
+        }  
+            /* insert answers (input) */
+            /* btn */
+            .answerInput_btn{
+                width: 100%;
+            }
+                #answerInputBtn{
+                    width: 100%;
+                    font-size: 20px;
+                }
+            /* content */
+            .answerInput_content{
+                width: 100%;
+            }
+                    
+            /* load answer status table (input) */
+            .answerInput_table{
+                width: 100%;
+                margin-top: 2%;
+            }   
+                /* btn */
+                .answerInputTableBtn{
+                    width: 100%;
+                }
+                    #answerInputTableBtn{
+                        font-size: 18px;
+                    }
+                /* content */
+                .answerInputTableContent{
+                    width: 100%;
+                    margin-top: 1%;
+                }
+        #backToTop{
+            opacity: 1; /* optioanal */
+        }
+            #backToTop img{
+                width: 0;
+            }
+    } 
+    @media(max-width: 500px){
+        .answerInput_content{
+            flex-direction: column;
+            /* height: 100px; */
+        }
+            .answerInput_content_select{
+                width: 100%;
+                justify-content: center;
+            }
+                #selectAnswerInputNumber{
+                    width: 100%;
+                    height: 85%;
+                    /* margin-right: 5px; */
+                    border: 1px solid gold;
+                    box-sizing: border-box;
+                }  
+
+            .answerInput_content_inputs{
+                width: 100%;
+            }
+    }
+    

@@ -1,0 +1,204 @@
+.answerInput_block{
+    width: 100%;
+    /* height: 100px; */
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+}  
+    .answerInput_btn{
+        width: 65%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        #answerInputBtn{
+            width: 100%;
+            height: 100%;
+            min-height: 50px;
+            background-color: #fff;
+            border-width: 0;
+            /* background-color: gold; */
+            /* border-top: 3px solid gold; */
+            border-top: 3px solid gold;
+            border-bottom: 1px solid gold;
+            /* color: #fff; */
+        }
+            #answerInputBtn:hover{
+                transition: .3s;
+                /* border: 3px solid gold; */
+                box-sizing: border-box;
+            }
+            #answerInputBtn:active{
+                color: #000;
+                border: 1.5px solid #000;
+                box-sizing: border-box;
+            }
+    .answerInput_content{
+        width: 65%;
+        /* width: 66%; */
+        /* height: 70%; */
+        height: 60px;
+        /* height: 100px; */
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-items: center;
+        justify-content: space-between;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: .7s;
+        /* border: 1px solid #000; */
+        box-sizing: border-box;
+    }
+        .answerInput_content:hover{
+            /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+            transition: .5s;
+        }
+        /* answerInput / select (task number) */
+        .answerInput_content_select{
+            width: 25%;
+            height: 100%;
+            /* border: 1px solid #000; */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            align-items: flex-end;
+        }
+             #selectAnswerInputNumber{
+                width: 95%;
+                height: 85%;
+                border: 1px solid gold;
+                box-sizing: border-box;
+            }  
+        /* answerInput / inputs (task answer, btn) */
+        .answerInput_content_inputs{
+            width: 75%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            /* border: 1px solid #000; */
+            box-sizing: border-box;
+        }
+            #answerInput{
+                width: 70%;
+                height: 85%;
+                font-size: 25px;
+                display: flex;
+                align-content: center;
+                border: 0px;
+                border: 1px solid gold;
+                box-sizing: border-box;
+            }          
+            #answerSubmit{
+                width: 30%;
+                height: 85%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 15px;
+                margin-left: 10px;
+                background-color: #fff;
+                border-width: 0px;
+                border: 1px solid gold;
+                box-sizing: border-box;
+            }     
+                #answerSubmit:hover{
+                    background-color: gold;
+                    color: white;
+                    transition: .3s;
+                }
+                #answerSubmit:active{
+                    color: #000;
+                    border: 1.5px solid #000;
+                    box-sizing: border-box;
+                }
+.answerInput_table{
+    width: 100%;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}   
+    .answerInputTableBtn{
+        width: 65%;
+        height: 20%;
+    }
+        #answerInputTableBtn{
+            width: 100%;
+            height: 100%;
+            min-height: 50px;
+            background-color: #fff;
+            border-width: 0px;
+            border-top: 2px solid gold;
+        }
+        #answerInputTableBtn:hover{
+            transition: .3s;
+            /* border: 3px solid gold; */
+            box-sizing: border-box;
+        }
+        #answerInputTableBtn:active{
+            color: #000;
+            border: 1.5px solid #000;
+            box-sizing: border-box;
+        }
+    .answerInputTableContent{
+        width: 66%;
+        height: 50%;
+        /* width: 0%; */
+        /* height: 0px; */
+        /* opacity: 0; */
+        margin-top: 1%;
+        /* transition: .7s; */
+    }
+
+
+#table_block{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* mobile */
+    overflow: hidden;
+}            
+    table{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* mobile */
+        overflow-x:auto;
+    }
+        tbody{
+            width: 100%;
+        }
+            tr{
+                width: 100%; 
+            }
+                th{
+                    background-color: #fff;
+                    border: 1px solid #000;
+                    box-sizing: border-box;
+                    height: 25px;
+                    border: 0;
+                }
+                td{
+                    background-color: #fff;
+                    width: 25%;
+                    height: 35px;
+                    text-align: center;
+                    border: 0;
+                }

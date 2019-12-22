@@ -1,0 +1,45 @@
+.footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1e1f23;
+    border-top: 5px solid gold;
+}
+    .footer_copyright_author{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }   
+        .fELem0{
+            width: 100%;
+            height: 100%;
+        }
+        .copyright{
+            display: flex;
+            align-items: flex-end;
+        }
+        .author{
+            display: flex;
+            align-items: flex-start;
+        }
+            .sub_fElem0{
+                width: 100%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                margin-left: 10%;
+            }
+            .sub_author a{
+                color: initial;
+            }
+    .footer_carousel{
+        width: 65%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #232428;
+        color: grey;
+    }

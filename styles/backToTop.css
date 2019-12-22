@@ -1,0 +1,27 @@
+/* #task make the button disappear smoothly */
+
+#backToTop{
+    display: none;
+    position: fixed; 
+    bottom: 15px; 
+    right: 25px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    text-align: center;
+    cursor: pointer; 
+    animation: btt .5s linear 1;
+    background-color: transparent;
+}
+    @keyframes btt{
+        0%{opacity: 0;transform: scale(0.95);}
+        100%{opacity: 1;transform: scale(1);}
+    }
+    #backToTop img{
+        width: 40px;
+        /* border-radius: 30px; */
+        background-color: gold;
+    }
+    #backToTop img:hover{
+        background-color: white;
+    }

@@ -1,0 +1,83 @@
+    .timDefStyle{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #000; */
+        box-sizing: border-box;
+    }
+        .timDefStyle{
+            width: 100%;
+            height: 100%;
+        }
+
+.timer_dialog{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    opacity: 0;
+    display: none;
+    transition: 2s;
+    /* animation: timerDialog 10s linear 1; */
+}
+    .sub_timer_dialog{
+        width: 20%;
+        max-width: 250px;
+        text-align: center;
+        left: -70%;
+        margin-top: 0.3%;
+        border: 0px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 1); 
+        box-shadow: 2px 5px 5px grey;
+    }
+
+.timer{
+    width: 90%;
+    height: 180px;
+    flex-direction: column;
+}   
+    .timer_display{
+        width: 100%;
+        height: 40%;
+        border: 1px solid gold;
+    }
+        .timer_time{
+            width: 50%;
+        }
+            #sub_timer_time{
+                height: 40%;
+                font-size: 50px;
+                color: gold;
+            }
+    .timer_controlers{
+        width: 100%;
+        height: 30%;
+    }
+        #startTimer, #stopTimer, #clearTimer{
+            width: 100px;
+            height: 100%;
+            background-color: transparent;
+            border: 0px;
+        }
+        #stopTimer{
+            display: none;
+            transform: scale(0.75);
+        }
+            #sub_startTimer{
+                background: url("../images/start-timer.png") center / contain no-repeat;
+            }
+            #sub_clearTimer{
+                background: url("../images/clear-timer.png") center / contain no-repeat;
+            }
+            #sub_stopTimer{
+                background: url("../images/stop-timer.png") center / contain no-repeat;
+            }
+                #sub_startTimer:hover, #sub_stopTimer:hover, #sub_clearTimer:hover{
+                    transform: scale(0.95);
+                    transition: .5s;
+                }
+                #sub_startTimer:active, #sub_stopTimer:active, #sub_clearTimer:active{
+                    transform: scale(1.25);
+                    transition: 0s;
+                }
