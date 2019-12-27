@@ -40,8 +40,12 @@ function loadIframe(){
 
     // when Load Iframe clicked, timer starts
     // startTimer();
+
+    // cancel iframe ads
+   
 } 
 
 // setting loadIframe() button event by dom
 loadIframeBtn = document.getElementById("loadIframe");
 loadIframeBtn.addEventListener("click", loadIframe);
+

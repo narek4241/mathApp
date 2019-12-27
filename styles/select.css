@@ -30,18 +30,24 @@
         flex-direction: column;
         justify-content: space-between;
     }
-                .sub_selDefStyle{
+                #selectCheckSheetSubj, #selectCheckSheetYear, #selectCheckSheetRep,
+                #selectCheckSheetChap, #selectCheckSheetSec{
                     background-color: #fff;
                     border: 0px;
                     color:#000;
                     font-size: 18px;
+                    transition: 0.5s;
                 }
-        .sel_year_subj_rep{
+                .sub_selDefStyle[disabled]{
+                    opacity: 0.8;
+                }
+                
+        .sel_subj_year_rep{
             width: 100%;
             height: 45%;
             justify-content: space-between;
         }
-            .sel_year, .sel_subj, .sel_rep{
+            .sel_subj, .sel_year, .sel_rep{
                 width: 32.5%;
             }
              

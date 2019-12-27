@@ -1,65 +1,130 @@
-// SELECT
+// Select
 
-// Set <SELECT> (sections) by dom
+// sel year
 
-// Reps, Chapters, Sections
-rep1_chap1_secNum = 10;
+let selYear = ["2012-13", "2013-14", "2014-15", "2015-16", "2016-17", "2017-18", "2018-19"];
 
-let selectSec = document.createElement("SELECT");
-    selectSec.id = "selectCheckSheetSec";
+let selYear_Select = document.getElementById("selectCheckSheetYear");
 
-    document.getElementById("selectSec").appendChild(selectSec);
+for(let i = 0; i < selYear.length; i++){
+    let option = document.createElement("OPTION");
 
-    for(let i = 0; i < rep1_chap1_secNum + 1; i++){
-        let option = document.createElement("OPTION");
+    option.text = `${selYear[i]}`;
+    option.value = `${selYear[i]}`;
+    selYear_Select.add(option);
 
-        option.text = `Section ${i}`;
-        option.value = i;
-        selectSec.add(option);
+    // if(i == 0){
+    //     option.text = `2000 Demo`;
+    //     option.value = i;
+    // }
+}
 
-        // console.log(`SecOptVal ${option.value}`);
+// sel subj
 
-        if(i == 0){
-            option.text = `Section ${i} Demo`;
-            option.value = i;
-        }
-    }
+let selSubj = ["Math", "Physics"];
 
-    
+let selSubj_Select = document.getElementById("selectCheckSheetSubj");
 
-// Setting [checkSheet] -> Select [chechSheetSec]
+for(let i = 0; i < selSubj.length; i++){
+    let option = document.createElement("OPTION");
 
-// [checkSheetSec] "resource" is in 'database.js'
+    option.text = `${selSubj[i]}`;
+    option.value = `${selSubj[i]}`;
+    selSubj_Select.add(option);
+}
+
+// sel rep
+
+let selRep = ["1", "2"];
+
+let selRep_Select = document.getElementById("selectCheckSheetRep");
+
+for(let i = 0; i < selRep.length; i++){
+    let option = document.createElement("OPTION");
+
+    option.text = `${selRep[i]}`;
+    option.value = `${selRep[i]}`;
+    selRep_Select.add(option);
+}
+
+// sel chap
+
+let selChap = ["1", "2", "3", "4", "5"];
+
+let selChap_Select = document.getElementById("selectCheckSheetChap");
+
+for(let i = 0; i < selChap.length; i++){
+    let option = document.createElement("OPTION");
+
+    option.text = `${selChap[i]}`;
+    option.value = `${selChap[i]}`;
+    selChap_Select.add(option);
+}
+
+// sel Sec
+
+let selSec = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+
+let selSec_Select = document.getElementById("selectCheckSheetSec");
+
+for(let i = 0; i < selSec.length; i++){
+    let option = document.createElement("OPTION");
+
+    option.text = `${selSec[i]}`;
+    option.value = `${selSec[i]}`;
+    selSec_Select.add(option);
+}
+
+
+// def side effect
 
 function selectCheckSheetSec(){
-    
-    checkSheet = [];
-    // Find shorter way to execute code below
-    if(document.getElementById("selectCheckSheetSec").value == 1){
-        checkSheet = checkSheetSec1;
-    }else if(document.getElementById("selectCheckSheetSec").value == 2){
-        checkSheet = checkSheetSec2;
-    }else if(document.getElementById("selectCheckSheetSec").value == 3){
-        checkSheet = checkSheetSec3;
-    }else if(document.getElementById("selectCheckSheetSec").value == 4){
-        checkSheet = checkSheetSec4;
-    }else if(document.getElementById("selectCheckSheetSec").value == 5){
-        checkSheet = checkSheetSec5;
-    }else if(document.getElementById("selectCheckSheetSec").value == 6){
-        checkSheet = checkSheetSec6;
-    }else if(document.getElementById("selectCheckSheetSec").value == 7){
-        checkSheet = checkSheetSec7;
-    }else if(document.getElementById("selectCheckSheetSec").value == 8){
-        checkSheet = checkSheetSec8;
-    }else if(document.getElementById("selectCheckSheetSec").value == 9){
-        checkSheet = checkSheetSec9;
-    }else if(document.getElementById("selectCheckSheetSec").value == 10){
-        checkSheet = checkSheetSec10;
-    }
-    // demo [checkSheet], sec 0
-    else if(document.getElementById("selectCheckSheetSec").value == 0){
-        checkSheet = checkSheetSec0;
-    }
-    
-    return checkSheet;
+    // console.log("def");
 }
+
+
+// <select>'s 'disabled' nuance (find shorter way to do this stuff, then distribute into whole code)
+
+// getting selects
+let subj = document.getElementById('selectCheckSheetSubj');
+let year = document.getElementById('selectCheckSheetYear');
+let rep = document.getElementById('selectCheckSheetRep');
+let chap = document.getElementById('selectCheckSheetChap');
+let sec = document.getElementById('selectCheckSheetSec');
+
+// enabling 'disabled' attr
+year.disabled = true;
+rep.disabled = true;
+chap.disabled = true;
+sec.disabled = true;
+
+// dismiss 'disabled' attr in case of 'change' evn
+subj.addEventListener("change", () => {year.disabled = false;});
+year.addEventListener("change", () => {rep.disabled = false;});
+rep.addEventListener("change", () => {chap.disabled = false;});
+chap.addEventListener("change", () => {sec.disabled = false;});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

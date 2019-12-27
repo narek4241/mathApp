@@ -480,16 +480,174 @@ function generateAnswerStatusTable(){
 // }
 
 
+// selectObject.js content
+
+// Root (~ to subj)
+
+// let rootObj = [mathObj, physObj];
+
+// Subj (year to rep)
+
+let mathObj = {
+    'math_y1213' : [math_y1213_rep1, math_y1213_rep1],
+    'math_y1314' : [math_y1314_rep1, math_y1314_rep1],
+    'math_y1415' : [math_y1415_rep1, math_y1415_rep1],
+    'math_y1516' : [math_y1516_rep1, math_y1516_rep1],
+    'math_y1617' : [math_y1617_rep1, math_y1617_rep1],
+    'math_y1718' : [math_y1718_rep1, math_y1718_rep1],
+    'math_y1819' : [math_y1819_rep1, math_y1819_rep1],
+};
+
+// let mathObj = [math_y1213, math_y1314, math_y1516, math_y1617, math_y1718, math_y1819];
+// let m = [ab, math_y1314, math_y1516, math_y1617, math_y1718, math_y1819];
+
+console.log("1");
+
+// Rep1
 
 
 
+// Tasks is below
+
+////////////////////////////////////////////////////////////////////////////////
+
+// source is mathApp0, use if needed
+
+// <!-- Tasks -->
+// <!-- 
+ ///// 1. every time when pushing "push button" it generates table 'again'DONE
+ // 2. validate prompt form unwanted values (wscwsc, 587696 ...) (REGEX)
+ // 3. selectCheckSheetSec's   if(.value = 1)...make shorter  use eval() (WARNING)
+ ///// 4. build <select> by dom  -> DONE
+ ///// 5. embed pdf file in html (youtube) -> DONE
+ // 6. add timer animation after generatingTable(); (after stop();) 
+ // 7. add quote (text) 'SLIDER' in footer bar (about math, machineLearning)
+ // 8. after generating table ...<audio> record 10s ...then after 5s play it (fun!!!) 
+ ///// 9. make pdf iframe work on mobile* -> DONE
+ ///// 10. make loadIframe to work on many sections at once ...not after refreshing (pageNumbers) -> DONE
+ ///// 11. make loadIframe button toggle (load & disload by "one" button) -> DONE
+ // 12. make loadIframe animatable toggle crushes sometimes (transition: 2s;) ...now css line is commented
+ /// 13. add indexes of answerInput, preferable to add also table which shows which done which not -> half done
+ /////14. pushAnswers button "Push Answers" -> "Generate Table" (text changed, id stayed the same) -> DONE
+ // 15. add new chapters
+ /// 16. numeric keyboard for input (type answers) -> solution (type=number)
+ // 17. turn multi-language (arm, eng)
+ // 18. timer adjustments (reminder to play, +print result)
+ // 19. #answerSubmit review 'visited' (or smth like clicked), in mobile clicked btn remains yellow (like active)
+ // 20. take care of fucntionality's working flow without enabling (click) or disabling btns *
+ // standard -> build table 
+// -->
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Iframe ads
 
 
+// trying to remove (by dom (display:none)) 
+
+// but I can't. XSS protection. Cross site contents can not be read by javascript.
+
+// document.getElementsByClassName('fh5---banner---container')[0];
+
+// document.getElementById('iframe_flip').childNodes;
+
+// document.getElementById('tmpContainer').childNodes;
+
+// document.getElementById('bookContainer');
+
+// #tmpContainer
+
+// document.getElementById('tmpContainer').nextElementSibling.style.display = 'none';
+
+// document.querySelector('#iframe_flip');
+
+// document.getElementById("iframe_flip").contentWindow.document.getElementsByTagName("body");
+
+// setTimeout(function(){setInterval(function(){btn.click; console.log("btn clicked")}, 1000)}, 5000);
+// setInterval(function(){btn.click(); console.log("btn clicked")}, 1000);
 
 
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    // document.getElementById("demo").innerHTML = coords;
+    console.log(coords);
+    // setInterval(function(){console.log(coords)}, 100);
+  }
+
+window.addEventListener('click', showCoords);  
+// var x = event.clientX;     // Get the horizontal coordinate
+// var y = event.clientY;     // Get the vertical coordinate
+// var coor = "X coords: " + x + ", Y coords: " + y;
+
+///////////////////////////////////////////////////
+// cancel ads
+
+let btn = document.getElementById('cancelIframeAd_Btn');
+
+// setInterval(function(){btn.click(); console.log("btn clicked")});
+
+// $('#cancelIframeAd_Btn').on('click', function() {
+//     alert('You clicked: ' + $(this).text());
+// });
+
+// x btn has x 590 y 490 cords
+let x = 590;
+let y = 490;
+
+// document.elementFromPoint(x, y).click();
+
+function click(x,y) {
+    var element = document.elementFromPoint(x,y);
+    $(element).click();
+    console.log("clicked");
+ }
+
+//  window.onload = click(590,490);
+//  window.onload = setTimeout(function(){click(590,490)}, 10000);
+
+//  
+
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    // document.getElementById("demo").innerHTML = coords;
+    console.log(coords);
+    // setInterval(function(){console.log(coords)}, 100);
+  }
+
+window.addEventListener('click', showCoords); 
 
 
+// cancel ad  ----->>>>> MAIN
 
+// css
+
+/* #cancelIframeAd{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10,10,10, 0.8);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+    #cancelIframeAd_Btn{
+        position: absolute;
+        border: 1px solid rgb(24, 24, 24);
+        background-color: transparent;
+        background-color: rgba(100,10,10, 0.8);
+        width: 22px;
+        height: 22px;
+        left: 81.5%;
+        top: 78%;
+    } */
+
+<div id="cancelIframeAd">
+    <div id="cancelIframeAd_Btn"></div>
+</div> 
 
 
 

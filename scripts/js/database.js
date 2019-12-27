@@ -1,4 +1,4 @@
-// [checkSheetSec] resource (real answers from atc.am)
+// [checkSheetSec] resource (real answers, from atc.am)
 
 // CHAPTER 1 (Sec. 1 - 10)
 
