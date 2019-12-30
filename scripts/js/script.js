@@ -72,7 +72,8 @@ generateResultTableBtn.addEventListener("click", displayResultTable);
 
 // generateResultTable();
 
-selectCheckSheetSec();
+// selectCheckSheetSec();
+
 
 // generateAnswerStatusTable();
 

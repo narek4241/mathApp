@@ -1,0 +1,3 @@
+-- SELECT Subj.Subject, Year.Year
+-- FROM Year
+-- INNER JOIN Subj ON Year.Id = Subj.Id;

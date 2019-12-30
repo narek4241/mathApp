@@ -16,31 +16,29 @@
             <div class="selDefStyle sel_subj_year_rep">
                 <div class="selDefStyle sel_subj">
                     <select id="selectCheckSheetSubj" class="sub_selDefStyle" name="name1" form="form1">
-                        <!-- <option value="1">Math (Sub. 1)</option> -->
-                        <option value="" disabled selected hidden>Subject</option>
+                        <option value="" selected>Subject</option>
                     </select>
                 </div>
                 <div class="selDefStyle sel_year">
                     <select id="selectCheckSheetYear" class="sub_selDefStyle" name="name1" form="form1">
-                        <option value="" disabled selected hidden>Year</option>
+                        <option value="" selected>Year</option>
                     </select>
                 </div>
                 <div class="selDefStyle sel_rep">
                     <select id="selectCheckSheetRep" class="sub_selDefStyle" name="name1" form="form1">
-                        <!-- <option value="1">Rep. 1</option> -->
-                        <option value="" disabled selected hidden>Rep.</option>
+                        <option value="" selected>Rep.</option>
                     </select>
                 </div>
             </div>
             <div class="selDefStyle sel_chap_sec">
                 <div class="selDefStyle sel_chap">
                     <select id="selectCheckSheetChap" class="sub_selDefStyle" name="name2" form="form2">
-                        <option value="" disabled selected hidden>Chapter</option>
+                        <option value="" selected>Chapter</option>
                     </select>
                 </div>
                 <div class="selDefStyle sel_sec">
                     <select id="selectCheckSheetSec" class="sub_selDefStyle" name="name2" form="form2">
-                        <option value="" disabled selected hidden>Section</option>
+                        <option value="" selected>Section</option>
                     </select>
                 </div>
             </div>

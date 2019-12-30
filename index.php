@@ -8,7 +8,7 @@
     <!-- media queries -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- animations -->
-    <link rel="stylesheet" href="styles/animate.css">
+    <!-- <link rel="stylesheet" href="styles/animate.css"> -->
     <title>SiteSource</title>
 </head>
 
@@ -29,16 +29,16 @@
     <script src="scripts/js/script.js"></script>
     
     <!-- modules  -->
-    <!-- <script src="scripts/js/modules/answers.js"></script>
+    <script src="scripts/js/modules/answers.js"></script>
     <script src="scripts/js/modules/back-to-top.js"></script>
     <script src="scripts/js/modules/check-answers.js"></script>
     <script src="scripts/js/modules/result-table.js"></script>
     <script src="scripts/js/modules/select.js"></script>
     <script src="scripts/js/modules/task-iframe.js"></script>
-    <script src="scripts/js/modules/timer.js"></script> -->
+    <script src="scripts/js/modules/timer.js"></script>
 
     <!-- modules (after compiling)-->
-    <script src="app.min.js"></script>
+    <!-- <script src="app.min.js"></script> -->
 
     <!-- jquery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
