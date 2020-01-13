@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- animations -->
     <!-- <link rel="stylesheet" href="styles/animate.css"> -->
+    <!-- <link rel="stylesheet" href="app.min.css"> -->
     <title>SiteSource</title>
 </head>
 
-<body>
+<body id="mainBody">
     <?php include 'components/header.php'; ?>
     <?php include 'components/timer.php'; ?>
     <?php include 'components/select.php'; ?>
@@ -29,14 +30,16 @@
     <script src="scripts/js/script.js"></script>
     
     <!-- modules  -->
+    <script src="scripts/js/modules/header.js"></script>
+    <script src="scripts/js/modules/timer.js"></script>
+    <script src="scripts/js/modules/dialog.js"></script>
     <script src="scripts/js/modules/answers.js"></script>
     <script src="scripts/js/modules/back-to-top.js"></script>
     <script src="scripts/js/modules/check-answers.js"></script>
     <script src="scripts/js/modules/result-table.js"></script>
     <script src="scripts/js/modules/select.js"></script>
     <script src="scripts/js/modules/task-iframe.js"></script>
-    <script src="scripts/js/modules/timer.js"></script>
-
+    <script src="scripts/js/modules/scroll.js"></script>
     <!-- modules (after compiling)-->
     <!-- <script src="app.min.js"></script> -->
 
@@ -46,6 +49,18 @@
 
 </html>
 
+
+
+
+
+<!-- Things to do next -->
+<!-- 
+1. Keep code clear.
+2. Remember rule 1st
+1. Sticky menu
+2. master modals (replace dialogs)
+
+ -->
 
 
 

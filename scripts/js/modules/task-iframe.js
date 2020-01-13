@@ -1,51 +1,60 @@
 // IFRAME
 
-// #task remove ad, find pos of x btn then click to close (event)
+// #task (additional read material) 'import' & 'export' nuance;
 
-// Select <iframe>'s 'page' by dom & 'loadIframe()', 'disloadIframe()'
+// #task remove ad, (tried once,but met XSS (Cross-site scripting) disturber circumstance)
 
-function loadIframe(){
-    let valueSec = document.getElementById("selectCheckSheetSec").value;
-    if(valueSec == 0){pageNumber = 6;}
-    if(valueSec == 1){pageNumber = 6;}
-    else if(valueSec == 2){pageNumber = 14;}
-    else if(valueSec == 3){pageNumber = 36;}
-    else if(valueSec == 4){pageNumber = 53;}
-    else if(valueSec == 5){pageNumber = 67;}
-    else if(valueSec == 6){pageNumber = 80;}
-    else if(valueSec == 7){pageNumber = 93;}
-    else if(valueSec == 8){pageNumber = 104;}
-    else if(valueSec == 9){pageNumber = 122;}
-    else if(valueSec == 10){pageNumber = 134;}
+// def vals (avoid from error in case of clicking loafIframe without pointing 'select' filters)
+let subjYearRep = repKeys[0][0][0]; 
+let pageNumber = 1;
 
-    // setting pageNumber in <IFRAME> 'src'
 
-    // pageNumber = 20;
+function loadIframe(subjYearRep, pageNumber){
+    
+    let iframeLink = `https://online.fliphtml5.com/ywkgy/${subjYearRep}/#p=${pageNumber}`;
 
-    // let link = `https://cdn.flipsnack.com/widget/v2/widget.html?hash=fz9qdfsmz&p=${pageNumber}`; // up to 30 answerInputBtn
-    // let link = `pdf/mathRep1.pdf#page=${pageNumber}`; // simple pdf
-    let link = `http://online.fliphtml5.com/ywkgy/qgln/?1572196142732#p=${pageNumber}`;
-    document.getElementById("iframe_flip").src = link;  
+    document.getElementById("iframeSource").src = iframeLink; 
 
     // load and disload iframe
-    if(document.getElementsByClassName("loadFrameCont")[0].style.height == "100%"){
-        document.getElementsByClassName("loadFrameCont")[0].style.height = "0%";
-        document.getElementById("iframe_flip").style.height = "0px";
-        document.getElementById("loadIframe").innerHTML = "Load Iframe";
+    let iframeBtn = document.getElementById("loadIframe");
+
+    if(document.getElementsByClassName("iframe_content")[0].style.display == ""){
+        document.getElementsByClassName("iframe_content")[0].style.display = "block";
+        iframeBtn.innerHTML = "Close Iframe";
     }else{
-        document.getElementsByClassName("loadFrameCont")[0].style.height = "100%";
-        document.getElementById("iframe_flip").style.height = "540px";
-        document.getElementById("loadIframe").innerHTML = "Close Iframe";
+        document.getElementsByClassName("iframe_content")[0].style.display = "";
+        iframeBtn.innerHTML = "Open Iframe";
+
+        // Scroll Iframe, when Closed
+        // Checks whether scrollPageTo() def or not (scroll.js linked or not)
+        if(typeof scrollPageTo != 'undefined'){
+            setTimeout(scrollPageTo('loadIframe', 'iframeScrollDown', selectScrollDown), 250);
+        }
     }
-
-    // when Load Iframe clicked, timer starts
-    // startTimer();
-
-    // cancel iframe ads
-   
 } 
 
-// setting loadIframe() button event by dom
+
 loadIframeBtn = document.getElementById("loadIframe");
-loadIframeBtn.addEventListener("click", loadIframe);
+loadIframeBtn.addEventListener("click", function(){loadIframe(subjYearRep, pageNumber);});
+
+
+
+// Iframe controler
+
+var slider = document.getElementById("ifrContrSlider_Input");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function(){
+  output.innerHTML = this.value;
+  document.getElementById('iframeContainer').style.height = `${this.value}px`;
+}
+
+
+
+
+
+
+
+
 

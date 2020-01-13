@@ -645,10 +645,769 @@ window.addEventListener('click', showCoords);
         top: 78%;
     } */
 
-<div id="cancelIframeAd">
+/* <div id="cancelIframeAd">
     <div id="cancelIframeAd_Btn"></div>
-</div> 
+</div>  */
 
+// another options to link pdf file
+
+// let link = `https://cdn.flipsnack.com/widget/v2/widget.html?hash=fz9qdfsmz&p=${pageNumber}`; // up to 30 answerInputBtn
+// let link = `pdf/mathRep1.pdf#page=${pageNumber}`; // simple pdf
+
+
+// Task iframe pageNumber nuance
+
+// let valueSec = document.getElementById("selectCheckSheetSec").value;
+    // if(valueSec == 0){pageNumber = 6;}
+    // if(valueSec == 1){pageNumber = 6;}
+    // else if(valueSec == 2){pageNumber = 14;}
+    // else if(valueSec == 3){pageNumber = 36;}
+    // else if(valueSec == 4){pageNumber = 53;}
+    // else if(valueSec == 5){pageNumber = 67;}
+    // else if(valueSec == 6){pageNumber = 80;}
+    // else if(valueSec == 7){pageNumber = 93;}
+    // else if(valueSec == 8){pageNumber = 104;}
+    // else if(valueSec == 9){pageNumber = 122;}
+    // else if(valueSec == 10){pageNumber = 134;}
+
+
+// safe for getting rep keys 
+
+if(selYear == selYearObj[0]){
+    if(selYear_Select.value == selYear[0]){
+        if(selRep_Select.value == selRepObj[1][0]){
+            subjYearRep = mathRepKeys[0][0];
+        }else if(selRep_Select.value == selRepObj[1][1]){
+            subjYearRep = mathRepKeys[0][1];
+        }else if(selRep_Select.value == selRepObj[1][2]){
+            subjYearRep = mathRepKeys[0][2];
+        }
+    }else if(selYear_Select.value == selYear[1]){
+        if(selRep_Select.value == selRepObj[1][0]){
+            subjYearRep = mathRepKeys[1][0];
+        }else if(selRep_Select.value == selRepObj[1][1]){
+            subjYearRep = mathRepKeys[1][1];
+        }else if(selRep_Select.value == selRepObj[1][2]){
+            subjYearRep = mathRepKeys[1][2];
+        }
+    }else if(selYear_Select.value == selYear[2]){
+        selRep = selRepObj[1]; // rep 3
+    }else if(selYear_Select.value == selYear[3]){
+        selRep = selRepObj[0]; // rep 2
+    }else if(selYear_Select.value == selYear[4]){
+        selRep = selRepObj[0]; // rep 2
+    }else if(selYear_Select.value == selYear[5]){
+        selRep = selRepObj[0]; // rep 2
+    }else if(selYear_Select.value == selYear[6]){
+        selRep = selRepObj[0]; // rep 2
+    }
+}else if(selYear == selYearObj[1]){
+    if(selYear_Select.value == selYear[0]){
+        selRep = selRepObj[1]; // rep 3
+    }else if(selYear_Select.value == selYear[1]){
+        selRep = selRepObj[1]; // rep 3
+    }else if(selYear_Select.value == selYear[2]){
+        selRep = selRepObj[1]; // rep 3
+    }else if(selYear_Select.value == selYear[3]){
+        selRep = selRepObj[1]; // rep 3
+    }else if(selYear_Select.value == selYear[4]){
+        selRep = selRepObj[1]; // rep 3
+    }else if(selYear_Select.value == selYear[5]){
+        selRep = selRepObj[1]; // rep 3
+    }
+}
+
+
+// sel chap nuance looong code
+
+if(selSubj_Select.value == selSubjObj[1]){
+    if(selYear_Select.value == selYearObj[1][0]){
+        if(selRep_Select.value == selRepObj[1][2][2]){
+            selChap = selChapObj[4];
+        }
+    }else if(selYear_Select.value == selYearObj[1][1]){
+        if(selRep_Select.value == selRepObj[1][2][2]){
+            selChap = selChapObj[4];
+        }
+    }else if(selYear_Select.value == selYearObj[1][2]){
+        if(selRep_Select.value == selRepObj[1][2][2]){
+            selChap = selChapObj[4];
+        }
+    }else if(selYear_Select.value == selYearObj[1][3]){
+        if(selRep_Select.value == selRepObj[1][2][2]){
+            selChap = selChapObj[4];
+        }
+    }else if(selYear_Select.value == selYearObj[1][4]){
+        if(selRep_Select.value == selRepObj[1][2][2]){
+            selChap = selChapObj[4];
+        }
+    }else if(selYear_Select.value == selYearObj[1][5]){
+        if(selRep_Select.value == selRepObj[1][2][2]){
+            selChap = selChapObj[4];
+        }
+    }
+}
+
+// sel sec nuance toooooo loooongg code
+
+if(selSubj_Select.value == selSubjObj[0]){
+    if(selYear_Select.value == selYear[0]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[3];
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[8];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[4];
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[4];
+            }
+        }
+    }else if(selYear_Select.value == selYear[1]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[3];
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[8];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[4];
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[4];
+            }
+        }
+    }else if(selYear_Select.value == selYear[2]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[3];
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[8];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[4];
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[4];
+            }
+        }
+    }else if(selYear_Select.value == selYear[3]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[3];
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[5];
+            }
+        }
+    }else if(selYear_Select.value == selYear[4]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[3];
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[5];
+            }
+        }
+    }else if(selYear_Select.value == selYear[5]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[3];
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[5];
+            }
+        }
+    }else if(selYear_Select.value == selYear[6]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[3];
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[9];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[5];
+            }
+        }
+    }
+}else if(selSubj_Select.value == selSubjObj[1]){
+    if(selYear_Select.value == selYear[0]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[4][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[4][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][2]){
+                selSec = selSecObj[10];
+                if(selSec.length == 11){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][3]){
+                selSec = selSecObj[11];
+                if(selSec.length == 12){
+                    for(let i=0; i<11; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][4]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<12; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }
+    }else if(selYear_Select.value == selYear[1]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[4][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[4][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][2]){
+                selSec = selSecObj[10];
+                if(selSec.length == 11){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][3]){
+                selSec = selSecObj[11];
+                if(selSec.length == 12){
+                    for(let i=0; i<11; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][4]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<12; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }
+    }else if(selYear_Select.value == selYear[2]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[4][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[4][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][2]){
+                selSec = selSecObj[10];
+                if(selSec.length == 11){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][3]){
+                selSec = selSecObj[11];
+                if(selSec.length == 12){
+                    for(let i=0; i<11; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][4]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<12; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }
+    }else if(selYear_Select.value == selYear[3]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[4][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[4][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][2]){
+                selSec = selSecObj[10];
+                if(selSec.length == 11){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][3]){
+                selSec = selSecObj[11];
+                if(selSec.length == 12){
+                    for(let i=0; i<11; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][4]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<12; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }
+    }else if(selYear_Select.value == selYear[4]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[4][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[4][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][2]){
+                selSec = selSecObj[10];
+                if(selSec.length == 11){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][3]){
+                selSec = selSecObj[11];
+                if(selSec.length == 12){
+                    for(let i=0; i<11; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][4]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<12; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }
+    }else if(selYear_Select.value == selYear[5]){
+        if(selRep_Select.value == selRep[0]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[1]){
+            if(selChap_Select.value == selChapObj[2][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[2][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[2][2]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }else if(selRep_Select.value == selRep[2]){
+            if(selChap_Select.value == selChapObj[4][0]){
+                selSec = selSecObj[5];
+            }else if(selChap_Select.value == selChapObj[4][1]){
+                selSec = selSecObj[7];
+                if(selSec.length == 8){
+                    for(let i=0; i<6; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][2]){
+                selSec = selSecObj[10];
+                if(selSec.length == 11){
+                    for(let i=0; i<8; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][3]){
+                selSec = selSecObj[11];
+                if(selSec.length == 12){
+                    for(let i=0; i<11; i++){
+                        selSec.shift();
+                    }
+                }
+            }else if(selChap_Select.value == selChapObj[4][4]){
+                selSec = selSecObj[12];
+                if(selSec.length == 13){
+                    for(let i=0; i<12; i++){
+                        selSec.shift();
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// selSec shift nuance
+
+// if(selSubj_Select.value == selSubj[1]){
+    console.log("mdav if2");
+
+    selSec = selSecObj[subj][year][rep][chap];
+    // if(selSec.length == chap){
+        console.log("mdav if3");
+        for(let i=0; i < 5; i++){
+            selSec.shift();
+        }
+    // }
+// }
+
+// Manual scroll elem by elem poor code but works correctly
+
+// Scroll Header 
+
+// function scrollHeader(){
+//     document.getElementById('mainBody').style.overflow = 'visible';
+//     let scrollDown = `${document.getElementById("header").style.height}`;
+
+//     scrollDown = scrollDown.substring(0, scrollDown.length - 2);
+//     scrollDown = +scrollDown + +headerScrollDown
+//     window.scrollTo(0, scrollDown);
+
+//     headerScrollDown = scrollDown;
+// }
+
+
+// Scroll Timer
+
+// function scrollTimer(){
+//     let scrollDown = `${document.getElementById("timer").style.height}`;
+
+//     scrollDown = scrollDown.substring(0, scrollDown.length - 2);
+//     scrollDown = +scrollDown + +headerScrollDown
+//     window.scrollTo(0, scrollDown);
+
+//     timerScrollDown = scrollDown;
+// }
+
+
+// Scroll Select
+
+// function scrollSelect(){
+//     let scrollDown = `${document.getElementById("selectCheckSheet").style.height}`;
+
+//     scrollDown = scrollDown.substring(0, scrollDown.length - 2);
+//     scrollDown = +scrollDown + +timerScrollDown
+//     window.scrollTo(0, scrollDown);
+
+//     selectScrollDown = scrollDown;
+// }
+
+
+// Scroll Iframe
+
+// function scrollIframe(){
+//     let scrollDown = `${document.getElementById('loadIframe').style.height}`;
+
+//     scrollDown = scrollDown.substring(0, scrollDown.length - 2);
+//     // scrollDown += +`50`;
+//     scrollDown = +scrollDown + +selectScrollDown;
+//     window.scrollTo(0, scrollDown);
+
+//     iframeScrollDown = scrollDown;
+// }
+
+
+// Def
+
+// function scrollPageTo(selector, prevElemScrollDown, selectorScrollDown){
+//     let scrollDown = `${document.getElementById(`${selector}`).style.height}`;
+
+//     scrollDown = scrollDown.substring(0, scrollDown.length - 2);
+//     scrollDown = +scrollDown + +`${prevElemScrollDown}`;
+//     window.scrollTo(0, scrollDown);
+
+//     selectorScrollDown = scrollDown;
+// }
 
 
 

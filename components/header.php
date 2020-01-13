@@ -10,10 +10,18 @@
 </head>
 
 <body>
-    <div class="headDefStyle header">
-        <div class="headDefStyle heading_block">
-            <div class="headDefStyle heading">SPhinx</div>
-            <div class="paragraph">(Demo) SSI Software</div>
+    <div id="header" class="headDefStyle header">
+        <div class="headDefStyle header__heading">
+            <div class="headDefStyle heading__title">SPhinx</div>
+            <div class="headDefStyle paragraph heading__opt">(Demo) SSI Software</div>
+        </div>
+        <div class="headDefStyle header__btns">
+            <div class="headDefStyle btn--get-started">
+                <button id="headerGetStartedBtn">GET STARTED</button>
+            </div>
+            <div class="headDefStyle btn--optional">
+                <button id="headerOptionalBtn">OPTIONAL</button>
+            </div>
         </div>
     </div>
 </body>

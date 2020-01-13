@@ -8,31 +8,72 @@
     }
 .header{
     width: 100%;
-    height: 400px;
-    overflow: hidden;
-    background-color: rgba(10, 10, 10, 0.1);
-    /* animation: header_bg 100s linear infinite; */
+    /* height: by dom */
+    background-color: rgba(0, 10, 0, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: header_bg 10s linear 1;
+    overflow-y: auto;
 }
-    @keyframes header_bg{
-        0%{background-color: rgba(10, 10, 10, 0.2);}
-        50%{background-color: rgba(0, 10, 0, 0.8);}
-        100%{background-color: rgba(10, 10, 10, 0.2);}
+    .header__heading, .header__btns{
+        position: relative;
+        top: 5%;
     }
-    .heading_block{
+    .header__heading{
         width: 100%;
-        height: 40%;
+        height: 25%;
         flex-direction: column;
         align-items: center;
     }
-        .heading{
+        .heading__title{
+            width: 20%;
             height: 50%;
             color: #fff;
-            font-size: 70px;
+            font-size: 95px;
             text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;  
+            align-items: center;
+            animation: heading 10s linear 1;
         }
-        .paragraph{
+        .heading__opt{
+            width: 20%;
+            height: 20%;
+            font-size: 25px;
             color: gold;
+            align-items: center;
+            animation: paragraph 10s linear 1;
         }
+    .header__btns{
+        width: 100%;
+        height: 20%;
+    }
+        .btn--get-started, .btn--optional{
+            width: 15%;
+            align-items: center;
+        }
+            #headerGetStartedBtn, #headerOptionalBtn{
+                width: 95%;
+                height: 50%;
+                border: 0;
+                border-radius: 50px;
+                color: transparent;
+                color: gold;
+                font-size: 20px;
+            }
+            #headerGetStartedBtn{
+                background-color: #fff;
+            }
+            #headerOptionalBtn{
+                background-color: transparent;
+                border: 1px solid gold;
+                opacity: 0.8;
+            }
+                #headerGetStartedBtn:hover{
+                    box-shadow: 0px 2px 2px rgba(242, 242, 242, 0.5);
+                }
+                #headerOptionalBtn:hover{
+                    opacity: 1;
+                }
 
 
 

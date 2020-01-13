@@ -43,6 +43,11 @@
                 </div>
             </div>
         </div>
+        <div class="selDefStyle sel_control">
+            <div class="selDefStyle sel_clear">
+                <button id="clearSelect" class="sub_selDefStyle">DBL CLICK TO CLEAR</button>
+            </div>
+        </div>
     </div>
 
     <!-- <script src="scripts/js/modules/select.js"></script> -->

@@ -5,12 +5,14 @@ body{
     width: 100%;
     margin: 0;
     border-top: 5px solid gold;
+    border-top: 5px solid transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(../images/b1.jpg);
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* overflow: hidden;(by dom)  */
 }
 button:focus, select:focus, input:focus {outline:0;}
 

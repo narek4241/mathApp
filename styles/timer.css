@@ -35,8 +35,9 @@
 .timer{
     width: 90%;
     height: 180px;
+    /* (if scroll.js) height: by dom */
     flex-direction: column;
-}   
+} 
     .timer_display{
         width: 100%;
         height: 40%;

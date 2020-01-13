@@ -13,14 +13,15 @@
     <div id="timerDialog" class="timDefStyle timer_dialog">
         <dialog class="sub_timer_dialog" open>Please turn the timer <i>ON</i></dialog>
     </div>
-    <timer class="timDefStyle timer">
+
+    <timer id='timer' class="timDefStyle timer">
         <div class="timDefStyle timer_display">
             <div id="timerTime" class="timDefStyle timer_time">
                 <time id="sub_timer_time" class="timDefStyle">00:00:00</time>
             </div>
         </div>
 
-        <div class="timDefStyle timer_controlers">
+        <div id="timerControlers" class="timDefStyle timer_controlers">
             <button id="startTimer">
                 <div id="sub_startTimer" class="timDefStyle"></div>
             </button>

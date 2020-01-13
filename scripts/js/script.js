@@ -1,3 +1,5 @@
+"use strict";
+
 // Declaring arrays
 
 // CheckSheet

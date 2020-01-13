@@ -1,4 +1,24 @@
-/* TIMER */
+/* Header */
+
+@keyframes header_bg{
+  0%, 5%{background-color: rgba(10, 10, 10, 0.8);}
+  15%, 100%{background-color: rgba(0, 10, 0, 0.2);}
+  /* 30%, 100%{background-color: rgba(0, 10, 0, 0.2);} */
+}
+
+@keyframes heading{
+  0%, 5%{transform: translate(-100%, 0%); opacity: 0;}
+  8%, 100%{transform: translate(0%, 0%); opacity: 1;}
+}
+
+@keyframes paragraph{
+  0%, 8%{transform: translate(-100%, 0%); opacity: 0;}
+  11%, 100%{transform: translate(0%, 0%); opacity: 1;}
+}
+
+
+
+/* Timer */
 
 /* timer Dialog */
 
@@ -13,7 +33,7 @@
   }
   100% {
     opacity: 0;
-    transform: translate(0%, 15%);
+    transform: translate(0%, -10%);
   }
 }
 
@@ -26,7 +46,7 @@
   }
   5%, 100% {
     opacity: 0;
-    transform: translate(0%, 5%);
+    transform: translate(0%, -10%);
   }
 }
 
@@ -54,3 +74,6 @@
     transform: translate(0%, 0%) scale(1);
   }
 }
+
+
+

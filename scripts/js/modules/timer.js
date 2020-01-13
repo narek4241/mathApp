@@ -11,7 +11,6 @@ let showTimer = document.getElementById('sub_timer_time'),
 
 function setTimer() {
 
-
     function add() {
         seconds++;
         if (seconds >= 60) {
@@ -94,32 +93,26 @@ function setTimer() {
 setTimer();
 
 
-// Dialog (Message Block)
 
-window.addEventListener("scroll", markTimerControler);
 
-// state 
 
-// getting same effect, when refreshing in at pos under scrollTop > ...
-if (document.documentElement.scrollTop > 100){
-    document.getElementById("timerDialog").style.display = "block";
-    document.getElementById("timerDialog").style.animation = "timerDialog 10s linear 1";
-    setTimeout(function () { document.getElementById("timerDialog").style.display = "none"; }, 10000);
-}
 
-// function
 
-let doneTheStuff;
 
-function markTimerControler() {
-    if (document.documentElement.scrollTop > 100) {
-        if (!doneTheStuff) {
-            document.getElementById("timerDialog").style.display = "block";
-            doneTheStuff = true;
-        }
-        // NOTE 'display' property doesn't work in animations
-        document.getElementById("timerDialog").style.animation = "timerDialog 10s linear 1";
-        setTimeout(function () { document.getElementById("timerDialog").style.display = "none"; }, 10000);
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

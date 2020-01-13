@@ -1,23 +1,31 @@
-.pdf_block{
-    width: 90%;
-    min-height: 50px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1%;
-}
-    .loadFrameBtn{
-        width: 100%;
-        height: 10%;
-        min-height:50px;
+    .ifrDefStyle{
+        height: 100%;
         display: flex;
         justify-content: center;
+        /* border: 1px solid #000; */
+        box-sizing: border-box;
     }
-        #loadIframe{
+        .sub_ifrDefStyle{
             width: 100%;
             height: 100%;
-            min-height: 50px; 
+        }
+
+.iframe_container{
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1%;
+    background-color: #323232;
+    height: 800px;
+    height: auto;
+}
+    .iframe_btn{
+        width: 100%;
+        height: 50px;
+        /* (if scroll.js) height: by dom */
+    }
+        #loadIframe{
+            /* min-height: 50px;  */
             background-color: #fff;
             border-width: 0px;
             border-top: 3px solid gold;
@@ -25,32 +33,83 @@
         }
             #loadIframe:hover{
                 transition: .3s;
-                /* border: 3px solid gold; */
-                box-sizing: border-box;
             }
             #loadIframe:active{
                 color: #000;
                 border: 1.5px solid #000;
-                box-sizing: border-box;
             }
-    .loadFrameCont{
+    .iframe_content{
         width: 100%;
-        height: 100%;
-        height: 0;
-        position: relative;
-    }   
-        #iframe_pdf{
+        height: calc(100% - 50px);
+        height: 750px;
+        resize: vertical;
+        overflow: auto;
+        display: none;
+    } 
+        .iframe_controler{
             width: 100%;
-            border: 0px;
-            height: 0px;
-            /* transition: 2s; */
-        }        
-        #iframe_flip{
-            width: 100%;
-            border: 0px;
-            height: 0px;
-            /* transition: 2s; */
+            height: 80px;
+            background-color: #323232;
         }
+            .ifrCtrl_slider{
+                width: 90%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+                .ifrCtrlSlider_input{
+                    width: 100%;
+                    height: 50%;
+                    align-items: center;
+                }
+                    .slider {
+                        -webkit-appearance: none;
+                        width: 100%;
+                        height: 15px;
+                        border-radius: 5px;
+                        background: #d3d3d3;
+                        outline: none;
+                        opacity: 0.7;
+                        transition: .2s;
+                    }
+                    .slider:hover {
+                        opacity: 1;
+                    }
+                    .slider::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background: #4CAF50;
+                        background-color: gold;
+                        cursor: pointer;
+                        /* cursor:e-resize; */
+                    }
+                    .slider::-moz-range-thumb {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }  
+                .ifrContrSlider_status{
+                    width: 100%;
+                    height: 30%;
+                    color: #181818;
+                }
+        .iframe{
+            width: 100%;
+            /* height: 90%; */
+            height: calc(100% - 80px);
+            /* max-height: 1200px; */
+            /* resize: vertical; */
+            /* overflow: auto; */
+            /* display: none; */
+        }
+            #iframeSource{
+                height: calc(100% - 15px);
+                border: 0px;
+            }
     
 
             

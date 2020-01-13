@@ -12,13 +12,15 @@
         }
 #selectCheckSheet{
     width: 90%;
-    height: 200px;
+    height: 250px;
+    /* (if scroll.js) height: by dom */
     flex-direction: column;
     justify-content: space-between;
 }
     .sel_heading{
         width: 100%;
         height: 30%;
+        height: 24%;
         background-color: #fff;
         border-bottom: 3px solid gold;
         border-radius: 70px 70px 0px 0px;
@@ -27,6 +29,7 @@
     .sel_content{
         width: 100%;
         height: 65%;
+        height: 52%;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -59,4 +62,26 @@
             .sel_chap, .sel_sec{
                 width: 49.375%;
             }
+    .sel_control{
+        width: 100%;
+        height: 14%;
+        box-sizing: border-box;
+    }
+        .sel_clear{
+            width: 100%;
+        }
+            #clearSelect{
+                height: 35px;    
+                border: 0px;  
+                font-size: 12px;
+                background-color: #fff;
+            }
+            #clearSelect:hover{
+                transition: .3s;
+            }
+            #clearSelect:active{
+                border: 1.5px solid #000;
+                box-sizing: border-box;
+            }
+            
             
