@@ -43,6 +43,14 @@ file9 = open('../js/modules' +'/header.js', 'r')
 new_file.write(file9.read())
 print("9 js is written")
 
+file10 = open('../js/modules' +'/side-nav.js', 'r')
+new_file.write(file10.read())
+print("10 js is written")
+
+# file(...) = open('../../styles' +'/(...).css', 'r')
+# new_file.write(file(...).read())
+# print("(...) css is written")
+
 new_file.close()
 
 
@@ -95,6 +103,10 @@ new_file.close()
 # file11 = open('../../styles' +'/toolbar.css', 'r')
 # new_file.write(file11.read())
 # print("11 css is written")
+
+# file(...) = open('../../styles' +'/(...).css', 'r')
+# new_file.write(file(...).read())
+# print("(...) css is written")
 
 
 # new_file.close()

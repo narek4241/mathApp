@@ -13,7 +13,7 @@
         #toolbarBtn{
             width: 100%;
             height: 100%;
-            font-size: 18px;
+            font-size: 12px;
         }
             #toolbarBtn{
                 width: 100%;
@@ -37,3 +37,12 @@
                     border: 1.5px solid #000;
                     box-sizing: border-box;
                 }
+
+@media (max-width: 400px){
+    .toolbar_block{
+        margin-top: 2%;
+    }
+        #toolbarBtn{
+            font-size: 14px;
+        }
+}

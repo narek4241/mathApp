@@ -12,8 +12,8 @@
 <body>
     <div id="header" class="headDefStyle header">
         <div class="headDefStyle header__heading">
-            <div class="headDefStyle heading__title">SPhinx</div>
-            <div class="headDefStyle paragraph heading__opt">(Demo) SSI Software</div>
+            <div class="headDefStyle heading__title"></div>
+            <div class="headDefStyle paragraph heading__opt">SSI Software</div>
         </div>
         <div class="headDefStyle header__btns">
             <div class="headDefStyle btn--get-started">

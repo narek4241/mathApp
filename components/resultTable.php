@@ -10,8 +10,15 @@
 </head>
 
 <body>
-    <div class="resultTable">
-        <div class=""><button id="resultTable">Generate Table</button></div>
+    <div id='resultTable' class="resTblDefStyle resultTable">
+        <div class="resTblDefStyle resultTable__Btn">
+            <button id="resultTableBtn">Generate Table</button>
+        </div>
+        <div id="resultTableContent" class="resTblDefStyle resultTable__Content">
+            <div id='resTblContTable' class="resTblDefStyle resTblCont__Table">
+                <!-- table by dom -->
+            </div>
+        </div>
     </div>
 
     <!-- <script src="scripts/js/modules/resultTable.js"></script> -->

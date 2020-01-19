@@ -43,3 +43,12 @@
         background-color: #232428;
         color: grey;
     }
+
+@media (max-width: 400px){
+    .footer{
+        flex-direction: column-reverse;
+    }
+        .footer_copyright_author, .footer_carousel{
+            width: 100%;
+        }
+}

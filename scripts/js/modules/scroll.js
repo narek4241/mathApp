@@ -64,9 +64,28 @@ iframeScrollDown += selectScrollDown;
 
 
 
+// Scroll Insert Answers
+
+document.getElementById("answerInputBtn").style.height = '50px';
+
+let startInsAnswBtn = document.getElementById('answerInputBtn');
+
+// later global use
+let insAnswScrollDown = document.getElementById("answerInputBtn").style.height;
+insAnswScrollDown = +(insAnswScrollDown.substring(0, insAnswScrollDown.length - 2));
+insAnswScrollDown += iframeScrollDown;
+
+// let loaderInsAnswScroll;
+
+// if(loaderInsAnswScroll == 1){
+//     startInsAnswBtn.addEventListener('click', function(){setTimeout(scrollPageTo('answerInputBtn', 'insAnswScrollDown', iframeScrollDown), 250)});
+// }
 
 
-// Scroll Module Function (for Header, Timer, Select, Iframe)  
+
+
+
+// Scroll Module Function (for Header, Timer, Select, Iframe, InsAnsw)  
 
 function scrollPageTo(selector, selectorScrollDown, prevSelectorScrollDown){
     let scrollDown = `${document.getElementById(selector).style.height}`;

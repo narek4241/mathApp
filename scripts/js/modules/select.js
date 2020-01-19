@@ -133,9 +133,9 @@ let selSec;
 
 selSec_Select.disabled = true;
 
-selSec_Select.addEventListener("change", genAnswersheetBySec);
+selSec_Select.addEventListener("change", genCheckSheetBySec);
 
-function genAnswersheetBySec(){
+function genCheckSheetBySec(){
     // Setting selAnswersheet
     // Setting pageNumber
     for(let subj = 0; subj < selSubj.length; subj++){
@@ -150,6 +150,8 @@ function genAnswersheetBySec(){
                                         if(selSec_Select.value == selSec[sec]){
                                             pageNumber = secPageNumbers[subj][year][rep][chap][sec];
                                             // console.log('checking overload times');
+                                            checkSheet = secChecksheets[subj][year][rep][chap][sec];
+                                            // console.log(`sel-ed checkSheet ${checkSheet}`);
                                         }
                                     }
                                 }

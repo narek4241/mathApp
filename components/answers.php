@@ -10,28 +10,37 @@
 </head>
 
 <body>
-    <div class="answerInput_block">
-        <div class="answerInput_btn">
-            <!-- <dialog open>Message</dialog> -->
-            <button id="answerInputBtn"><i>Insert</i> Answers</button>
-        </div>
-        <div class="answerInput_content">
-            <!-- '#selectCheckSheetSec' of the <SELECT> element below -->
-            <div class="answerInput_content_select">
-                <select id="selectAnswerInputNumber" name="" form="">
-                    <!-- <option value="1">1</option> -->
-                    <!-- add section's full numbers by dom  -->
-                </select>
+    <div class="answDefStyle answers">
+        <div class="answDefStyle answers__input">
+            <div class="answDefStyle answInput__btn">
+                <button id="answerInputBtn"><i>Insert</i> Answers</button>
             </div>
-            <div class="answerInput_content_inputs">
-                <input id="answerInput" type="text" value="" maxlength="4" placeholder="Insert the answer:">
-                <input id="answerSubmit" type="submit" value="Submit">
+            <div id="answerInputCont" class="answDefStyle answInput__content">
+                <div class="answDefStyle answInpCont__select">
+                    <select id="selectAnswerInputNumber" disabled>
+                        <!-- <option value="1">1</option> -->
+                        <!-- add section's full numbers by dom  -->
+                    </select>
+                </div>
+                <div class="answDefStyle answInpCont__form--submit">
+                    <div id='answInpContForm' class="answDefStyle answInpCont__form">
+                        <!-- by dom -->
+                    </div>
+                    <div class="answDefStyle answInpCont__submit">
+                        <input id="answerSubmit" type="submit" value="Submit">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="answerInput_table">
-        <div class="answerInputTableBtn"><button id="answerInputTableBtn">Answer Status Table</button></div>
-        <div class="answerInputTableContent"></div>
+
+        <div class="answDefStyle answers__status-table">
+            <div class="answDefStyle answStatTbl__btn">
+                <button id="answStatusTableBtn">Answer Status Table</button>
+            </div>
+            <div id="answStatusTableCont" class="answDefStyle answStatTbl__content">
+                <!-- <div class="answDefStyle answStatusTableCont"></div> -->
+            </div>
+        </div>
     </div>
 
     <!-- <script src="scripts/js/modules/answers.js"></script> -->

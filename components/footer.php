@@ -19,7 +19,7 @@
             </div>
             <div class="fELem0 author">
                 <div class="sub_fElem0 sub_author">
-                    <i>Coded & Designed by <a href="https://github.com/narek4241" add target="_blank">DeveloperX</a></i>
+                    <i>Coded & Designed by <a href="https://github.com/narek4241" add target="_blank">DevX</a></i>
                 </div>
             </div>
         </div>

@@ -15,6 +15,7 @@
 
 <body id="mainBody">
     <?php include 'components/header.php'; ?>
+    <?php // include 'components/side-nav.php'; ?>
     <?php include 'components/timer.php'; ?>
     <?php include 'components/select.php'; ?>
     <?php include 'components/taskIframe.php'; ?>
@@ -22,6 +23,7 @@
     <?php include 'components/answers.php'; ?>
     <?php include 'components/resultTable.php'; ?>
     <?php include 'components/backToTop.php'; ?>
+    <?php // include 'components/report.php'; ?>
     <?php include 'components/footer.php'; ?>
 
     <!-- Scripts -->
@@ -33,13 +35,18 @@
     <script src="scripts/js/modules/header.js"></script>
     <script src="scripts/js/modules/timer.js"></script>
     <script src="scripts/js/modules/dialog.js"></script>
+
     <script src="scripts/js/modules/answers.js"></script>
+    <script src="scripts/js/modules/answers-input-method.js"></script>
+    <script src="scripts/js/modules/answers-status-table.js"></script>
+
     <script src="scripts/js/modules/back-to-top.js"></script>
     <script src="scripts/js/modules/check-answers.js"></script>
     <script src="scripts/js/modules/result-table.js"></script>
     <script src="scripts/js/modules/select.js"></script>
     <script src="scripts/js/modules/task-iframe.js"></script>
-    <script src="scripts/js/modules/scroll.js"></script>
+    <script src="scripts/js/modules/side-nav.js"></script>
+    <!-- <script src="scripts/js/modules/scroll.js"></script> -->
     <!-- modules (after compiling)-->
     <!-- <script src="app.min.js"></script> -->
 
@@ -62,8 +69,13 @@
 
  -->
 
+<!-- Things to review -->
+<!-- 
+1. In Header (active scroll.js) when scrollbar appears 'Headings move' .
+2. Toggle btns (display:none nuance +animation(transition))
+    2.1) 'Insert answers' btn work flow normal (destroyed when clicking many times in second to test) 
 
-
+ -->
 
 
 

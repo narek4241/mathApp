@@ -1,23 +1,45 @@
-// MAIN_TABLE
+// Result Tabel (button, content)
 
-// Generate Table (button, content)
+// resultTable__Btn
 
-// button
+let loaderIndexOfDisplayResultTable = 1;
 
-// done in 'script.js'
+function displayResultTable(){
 
-// content
+    checkAnswers();
+
+    if(loaderIndexOfDisplayResultTable === 1){
+        generateResultTable();
+        document.getElementById("resultTableBtn").innerHTML = "Close Table";
+        loaderIndexOfDisplayResultTable = 0;
+    }else{
+        document.getElementById("resTblContTable").children[0].remove();
+        document.getElementById("resultTableBtn").innerHTML = "Generate Table";
+        loaderIndexOfDisplayResultTable++;
+    }
+    // add timer animation #task
+    stopTimer();
+}
+
+let generateResultTableBtn = document.getElementById("resultTableBtn");
+generateResultTableBtn.addEventListener("click", displayResultTable);
+
+
+
+// resultTable__Content
+
+// let answerNumberInSingleTask = 4;
 
 function generateResultTable(){
 
-    let body = document.getElementsByTagName("body")[0];
+    // let body = document.getElementsByTagName("body")[0];
     
     let tbl = document.createElement("table");
 
     // tbl.classList.add("tbl");
 
     let tblBody = document.createElement("tbody");
-    // top side (N, 1 2 3 4)
+    // top side (N, 1 2 3 answerNumberInSingleTask)
     for(let i = 0; i < 1; i++){
         let row = document.createElement("tr");
         for(let j = 0; j < 1; j++){
@@ -27,9 +49,13 @@ function generateResultTable(){
             head.appendChild(headText);
             row.appendChild(head);
         }
-        for(let j = 0; j < 4; j++){
+        for(let j = 0; j < answerNumberInSingleTask; j++){
             let cell = document.createElement("th");
             let cellText  = document.createTextNode(`${j+1}`);
+            // my 1 check (note)
+            if(j == 0){
+                cellText  = document.createTextNode(`(my) ${j+1} (check)`);
+            }
 
             cell.appendChild(cellText);
             row.appendChild(cell);
@@ -53,7 +79,7 @@ function generateResultTable(){
                 row.appendChild(head);
             }
             // table width (task values 3in1)
-            for(let j = 0; j < 4; j++){
+            for(let j = 0; j < answerNumberInSingleTask; j++){
                 let cell = document.createElement("td");
 
                 // div of AnserSheetValue and CheckSheetValue (2 of 3)
@@ -63,8 +89,10 @@ function generateResultTable(){
                 valueAnswerSheetCheckSheet.style.justifyContent = "space-evenly";
 
                     let answerSheetValue  = document.createElement("p");
-                    // checks whether "undefined" or not (could also check during "Prompt")
+                    // checks whether "undefined", 'NaN'('-') or not
                     if(typeof answerSheet[n][j] == "undefined"){
+                        answerSheetValue.innerHTML = `–`;
+                    }else if(isNaN(answerSheet[n][j])){
                         answerSheetValue.innerHTML = `-`;
                     }else{
                         answerSheetValue.innerHTML = `${answerSheet[n][j]}`;
@@ -117,18 +145,21 @@ function generateResultTable(){
         for(let j = 0; j < 3; j++){
             let head = document.createElement("th");
 
-            let headText = document.createElement("h4");
+            let headText = document.createElement("hanswerNumberInSingleTask");
             headText.innerHTML = `${keysOverallResultSheet[j]}`;
 
                 if(headText.innerHTML == "trueAnswers"){
+                    headText.innerHTML = 'True Answers';
                     headText.style.color = "green";
                     headText.style.border = "1px solid green";
                 }else if(headText.innerHTML == "falseAnswers"){
+                    headText.innerHTML = 'False Answers';
                     headText.style.color = "red";
                     headText.style.border = "1px solid red";
                 }else{
-                    headText.style.color = "grey";
-                    headText.style.border = "1px solid grey";
+                    headText.innerHTML = 'Empty Answers';
+                    headText.style.color = "#990000";
+                    headText.style.border = "1px solid #990000";
                 }
 
             head.appendChild(headText);
@@ -192,6 +223,17 @@ function generateResultTable(){
     }
     tbl.appendChild(tblBody);
     
-    let table = document.getElementById("table_block")
+    let table = document.getElementById("resTblContTable");
+    
     table.appendChild(tbl);
 }
+
+
+
+
+
+
+
+
+
+

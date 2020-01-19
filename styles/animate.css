@@ -16,7 +16,17 @@
   11%, 100%{transform: translate(0%, 0%); opacity: 1;}
 }
 
+/* header btns */
 
+@keyframes headerGetStartedBtn{
+  0%, 12%{transform: translate(0%, -10%); opacity: 0;}
+  19%, 100%{transform: translate(0%, 0%); opacity: 1;}
+}
+
+@keyframes headerOptionalBtn{
+  0%, 16%{transform: translate(0%, -10%); opacity: 0;}
+  21%, 100%{transform: translate(0%, 0%); opacity: 1;}
+}
 
 /* Timer */
 
