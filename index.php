@@ -10,16 +10,17 @@
     <!-- animations -->
     <!-- <link rel="stylesheet" href="styles/animate.css"> -->
     <!-- <link rel="stylesheet" href="app.min.css"> -->
-    <title>SiteSource</title>
+    <title>AppLab</title>
 </head>
 
 <body id="mainBody">
     <?php include 'components/header.php'; ?>
-    <?php // include 'components/side-nav.php'; ?>
+    <?php include 'components/side-nav.php'; ?>
     <?php include 'components/timer.php'; ?>
     <?php include 'components/select.php'; ?>
-    <?php include 'components/taskIframe.php'; ?>
-    <?php include 'components/toolbar.php'; ?>
+    <?php include 'components/take-care.php'; ?>
+    <?php include 'components/task-iframe.php'; ?>
+    <?php // include 'components/toolbar.php'; ?>
     <?php include 'components/answers.php'; ?>
     <?php include 'components/resultTable.php'; ?>
     <?php include 'components/backToTop.php'; ?>
@@ -46,7 +47,7 @@
     <script src="scripts/js/modules/select.js"></script>
     <script src="scripts/js/modules/task-iframe.js"></script>
     <script src="scripts/js/modules/side-nav.js"></script>
-    <!-- <script src="scripts/js/modules/scroll.js"></script> -->
+    <script src="scripts/js/modules/scroll.js"></script>
     <!-- modules (after compiling)-->
     <!-- <script src="app.min.js"></script> -->
 
@@ -64,8 +65,8 @@
 <!-- 
 1. Keep code clear.
 2. Remember rule 1st
-1. Sticky menu
-2. master modals (replace dialogs)
+3. master modals (replace dialogs)
+4. Report Nuance
 
  -->
 
@@ -73,7 +74,7 @@
 <!-- 
 1. In Header (active scroll.js) when scrollbar appears 'Headings move' .
 2. Toggle btns (display:none nuance +animation(transition))
-    2.1) 'Insert answers' btn work flow normal (destroyed when clicking many times in second to test) 
+    2.1) 'Insert answers' btn work flow normal (destroyed when clicking many times in second to test)
 
  -->
 

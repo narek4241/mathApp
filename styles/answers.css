@@ -18,15 +18,18 @@
         }
         
 .answers{
-    width: 90%;
+    width: 100%;
     /* min-height: 140px; */
     height: auto;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    background-color: #424242;
+    background-color: #181818;
     margin-top: 5%;
 }
     .answers__input{
-        width: 100%;
+        width: 90%;
         height: 50%;
         flex-direction: column;
     }  
@@ -114,7 +117,7 @@
                         }
 
     .answers__status-table{
-        width: 100%;
+        width: 90%;
         height: 50%;
         flex-direction: column;
         justify-content: center;

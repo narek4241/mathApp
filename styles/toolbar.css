@@ -1,13 +1,20 @@
 .toolbar_block{
-    width: 90%;
+    width: 100%;
     height: 50px;
+    height: 350px;
+    height: 150px;
     /* border: 1px solid #000; */
     box-sizing: border-box;
-    margin-top: 1%;
+    /* margin-top: 1%; */
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
     .toolbar_btn{
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        /* height: 100%; */
+        height: 50px;
         display: flex;
     }
         #toolbarBtn{
@@ -20,11 +27,12 @@
                 height: 100%;
                 min-height: 50px;
                 background-color: #fff;
+                background-color: #181818;
                 border-width: 0;
                 /* background-color: gold; */
                 /* border-top: 3px solid gold; */
-                border-top: 3px solid gold;
-                border-bottom: 1px solid gold;
+                /* border-top: 3px solid gold; */
+                /* border-bottom: 1px solid gold; */
                 /* color: #fff; */
             }
                 #toolbarBtn:hover{
@@ -38,11 +46,11 @@
                     box-sizing: border-box;
                 }
 
-@media (max-width: 400px){
+/* @media (max-width: 400px){
     .toolbar_block{
         margin-top: 2%;
     }
         #toolbarBtn{
             font-size: 14px;
         }
-}
+} */

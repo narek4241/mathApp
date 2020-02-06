@@ -10,78 +10,140 @@
             width: 100%;
             height: 100%;
         }
-#selectCheckSheet{
-    width: 90%;
-    height: 250px;
-    /* (if scroll.js) height: by dom */
-    flex-direction: column;
-    justify-content: space-between;
+.select{
+    width: 100%;
+    height: 560px;
 }
-    .sel_heading{
-        width: 100%;
-        height: 30%;
-        height: 24%;
-        background-color: #fff;
-        border-bottom: 3px solid gold;
-        border-radius: 70px 70px 0px 0px;
-        font-size: 22px;
-    }
-    .sel_content{
-        width: 100%;
-        height: 65%;
-        height: 52%;
+        /* #selectCheckSheet{} */
+    .select__main{
+        width: 50%;
+        height: 100%;
+        /* height: 250px; */
+        /* (if scroll.js) height: by dom */
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        background-color: #f8f9f9;
     }
-                #selectCheckSheetSubj, #selectCheckSheetYear, #selectCheckSheetRep,
-                #selectCheckSheetChap, #selectCheckSheetSec{
-                    background-color: #fff;
-                    border: 0px;
-                    color:#000;
-                    font-size: 18px;
-                    transition: 0.5s;
-                }
-                .sub_selDefStyle[disabled]{
-                    opacity: 0.8;
+        .sel__heading{
+            width: 90%;
+            height: 30%;
+        }
+            .sub_sel__heading{
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                font-size: 35px;
+            }
+        .sel__content{
+            width: 90%;
+            height: 65%;
+            height: 25%;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+                    #selectCheckSheetSubj, #selectCheckSheetYear, #selectCheckSheetRep,
+                    #selectCheckSheetChap, #selectCheckSheetSec{
+                        background-color: #fff;
+                        border: 0px;
+                        color:#000;
+                        font-size: 18px;
+                        transition: 0.5s;
+                    }
+                    .sub_selDefStyle[disabled]{
+                        opacity: 0.8;
+                    }
+                    
+            .sel_subj_year_rep{
+                width: 100%;
+                height: 45%;
+                justify-content: space-between;
+            }
+                .sel_subj, .sel_year, .sel_rep{
+                    width: 32.5%;
                 }
                 
-        .sel_subj_year_rep{
-            width: 100%;
-            height: 45%;
+            .sel_chap_sec{
+                width: 100%;
+                height: 45%;
+                justify-content: space-between;
+            }
+                .sel_chap, .sel_sec{
+                    width: 49.375%;
+                }
+        .sel__optional{
+            width: 90%;
+            height: 10%;
+        }
+            .sub_sel__optional{
+                width: 100%;
+                color: #787878;
+                font-size: 25px;
+                display: flex;
+                align-items: flex-end;
+            }
+        .sel__control{
+            width: 90%;
+            height: 10%;
+            box-sizing: border-box;
             justify-content: space-between;
         }
-            .sel_subj, .sel_year, .sel_rep{
-                width: 32.5%;
+            .sel_clear, .sel_random{
+                width: 49.85%;
             }
-             
-        .sel_chap_sec{
-            width: 100%;
-            height: 45%;
-            justify-content: space-between;
-        }
-            .sel_chap, .sel_sec{
-                width: 49.375%;
-            }
-    .sel_control{
-        width: 100%;
-        height: 14%;
-        box-sizing: border-box;
+                #clearSelect, #randomSelect{
+                    height: 35px;    
+                    border: 0px;  
+                    font-size: 12px;
+                    background-color: #fff;
+                }
+                #clearSelect:hover, #randomSelect:hover{
+                    transition: .3s;
+                }
+                #clearSelect:active, #randomSelect:active{
+                    border: 1.5px solid #000;
+                    box-sizing: border-box;
+                }
+    .select__img{
+        width: 50%;
+        height: 100%;
+        background: transparent url('../images/b5.jpg') no-repeat center;
+    }          
+
+
+@media (max-width: 400px){
+    .select{
+        position: relative;
     }
-        .sel_clear{
+        .select__main{
             width: 100%;
+            position: absolute;
+            height: 100%;
+            /* height: 250px; */
+            /* (if scroll.js) height: by dom */
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: transparent;
+            /* background-color: rgba(248, 249, 249, 0.5); */
         }
-            #clearSelect{
-                height: 35px;    
-                border: 0px;  
-                font-size: 12px;
-                background-color: #fff;
-            }
-            #clearSelect:hover{
-                transition: .3s;
-            }
-            #clearSelect:active{
-                border: 1.5px solid #000;
-                box-sizing: border-box;
-            }
-            
-            
+        #selectCheckSheet{
+            height: 100%;
+        }
+        .select__img{
+            width: 100%;
+            height: 100%;
+            background: transparent url('../images/b5.jpg') no-repeat center;
+        }
+}
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+                

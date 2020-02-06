@@ -18,17 +18,22 @@ function loadIframe(subjYearRep, pageNumber){
     // load and disload iframe
     let iframeBtn = document.getElementById("loadIframe");
 
-    if(document.getElementsByClassName("iframe_content")[0].style.display == ""){
-        document.getElementsByClassName("iframe_content")[0].style.display = "block";
-        iframeBtn.innerHTML = "Close Iframe";
-    }else{
-        document.getElementsByClassName("iframe_content")[0].style.display = "";
-        iframeBtn.innerHTML = "Open Iframe";
+    if(document.getElementsByClassName("ifrCont__content")[0].style.display == ""){
+        document.getElementsByClassName("ifrCont__content")[0].style.display = "block";
+        iframeBtn.style.backgroundColor = "#323232";
+        iframeBtn.style.color = "#000";
+        iframeBtn.innerHTML = "Close Book";
 
+    }else{
+        document.getElementsByClassName("ifrCont__content")[0].style.display = "";
+        iframeBtn.innerHTML = "Open Book";
+
+        iframeBtn.style.backgroundColor = "#fff";
+        iframeBtn.style.color = "#323232";
         // Scroll Iframe, when Closed
         // Checks whether scrollPageTo() def or not (scroll.js linked or not)
         if(typeof scrollPageTo != 'undefined'){
-            setTimeout(scrollPageTo('loadIframe', 'iframeScrollDown', selectScrollDown), 250);
+            setTimeout(scrollPageTo('iframe', 'iframeScrollDown', takeCareScrollDown), 250);
         }
     }
 } 

@@ -1,0 +1,146 @@
+    .takeCareDefStyle{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #000; */
+        box-sizing: border-box;
+    }
+        .sub_takeCareDefStyle{
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.take-care{
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+}
+    .takeCare__heading{
+        width: 100%;
+        height: 40%;
+    }
+        .sub_takeCare__heading{
+            font-size: 35px;
+        }
+    .takeCare__content{
+        width: 100%;
+        height: 45%;
+        justify-content: space-evenly;
+    }  
+        .takeCareCont__test, .takeCareCont__time, 
+        .takeCareCont__task, .takeCareCont__enjoy{
+            width: 20%;
+            /* flex-direction: column; */
+        }
+            .takeCareContTest__text, .takeCareContTime__text, 
+            .takeCareContTask__text, .takeCareContEnjoy__text{
+                width: 50%;
+                justify-content: center;
+            }
+                .sub_takeCareContTest__text, .sub_takeCareContTime__text, 
+                .sub_takeCareContTask__text, .sub_takeCareContEnjoy__text{
+                    color: grey;
+                }
+
+            .takeCareContTest__img, .takeCareContTime__img, 
+            .takeCareContTask__img, .takeCareContEnjoy__img{
+                width: 50%;
+                height: 50%;
+                /* background-color: darkred; */
+            }
+                .sub_takeCareContTest__img, .sub_takeCareContTime__img, 
+                .sub_takeCareContTask__img, .sub_takeCareContEnjoy__img{
+                    background: transparent no-repeat center;
+                    background-size: contain;
+                    transform:scale(0.65);
+                    filter: invert(100%);
+                }
+                .sub_takeCareContTest__img{
+                    background-image: url(../images/take-care-test.png);
+                }
+                .sub_takeCareContTime__img{
+                    background-image: url(../images/take-care-time.png);
+                }
+                .sub_takeCareContTask__img{
+                    background-image: url(../images/take-care-task.png);
+                }
+                 .sub_takeCareContEnjoy__img{
+                    background-image: url(../images/take-care-enjoy.png);
+                }
+                    .sub_takeCareContTest__img:hover, .sub_takeCareContTime__img:hover, 
+                    .sub_takeCareContTask__img:hover, .sub_takeCareContEnjoy__img:hover{
+                        filter: invert(100%);
+                        /* filter: invert(0%); */
+                    }
+
+
+@media (max-width: 900px){
+    .takeCareCont__test, .takeCareCont__time, 
+    .takeCareCont__task, .takeCareCont__enjoy{
+        flex-direction: column;
+    }
+        .takeCareContTest__text, .takeCareContTime__text, 
+        .takeCareContTask__text, .takeCareContEnjoy__text{
+            width: 100%;
+            justify-content: center;
+        }
+        .takeCareContTest__img, .takeCareContTime__img, 
+        .takeCareContTask__img, .takeCareContEnjoy__img{
+            width: 100%;
+            height: 100%;
+            /* background-color: darkred; */
+        }
+}
+
+@media (max-width: 650px){
+    .take-care{
+        height: 550px;
+    }
+        .takeCare__heading{
+            height: 25%;
+        }
+        .takeCare__content{
+            height: 70%;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+            .takeCareCont__test, .takeCareCont__time, 
+            .takeCareCont__task, .takeCareCont__enjoy{
+                flex-direction: column;
+                width: 100%;
+                height: 20%;
+            }
+            .sub_takeCareContTest__img, .sub_takeCareContTime__img, 
+            .sub_takeCareContTask__img, .sub_takeCareContEnjoy__img{
+                transform:scale(1);
+            }
+}
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       

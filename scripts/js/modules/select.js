@@ -193,7 +193,6 @@ let clearBtn = document.getElementById("clearSelect");
 clearBtn.addEventListener("dblclick", clearSelect);
 
 function clearSelect(){
-    
     selSubj_Select.value = "";
     selYear_Select.value = "";
     selYear_Select.disabled = true;
@@ -206,10 +205,10 @@ function clearSelect(){
     
     selSec_Select.value = "";
     selSec_Select.disabled = true;
-
-    // repKeys = "";
-    // secPageNumbers = "";
 }
+
+
+
 
 
 

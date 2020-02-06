@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav">
+    <!-- <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">MathLab</a>
         <a href="#">Timer</a>
@@ -24,7 +24,21 @@
         <div style="font-size:30px;cursor:pointer" onclick="openNav()">
             <div>&#9776;</div>
         </div>
+    </div> -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
+
+
+    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+
+
+
+
 </body>
 
 

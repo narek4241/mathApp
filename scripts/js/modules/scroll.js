@@ -1,6 +1,7 @@
 // Setting overflow hidden 
-document.getElementById('mainBody').style.overflow = `hidden`;
+// document.getElementById('mainBody').style.overflow = `hidden`;
 // Scrolling page to the 0 point (while refreshing)
+
 window.scrollTo(0, 1);
 
 
@@ -19,9 +20,11 @@ headerGetStartedBtn.addEventListener('click', function(){
 
 
 
+
+
 // Scroll Timer
 
-document.getElementById("timer").style.height = '180px';
+document.getElementById("timer").style.height = '420px';
 
 let startTimerBtn = document.getElementById('sub_startTimer');
 
@@ -34,33 +37,62 @@ startTimerBtn.addEventListener('click', function(){setTimeout(scrollPageTo('time
 
 
 
+
+
 // Scroll Select
 
-document.getElementById("selectCheckSheet").style.height = '250px';
+document.getElementById("selectCheckSheet").style.height = '560px';
 
-let startSelectBtn = document.getElementById('selectCheckSheetSec');
+let selectBtn = document.getElementById('selectCheckSheetSec');
 
 // later global use
 let selectScrollDown = document.getElementById("selectCheckSheet").style.height;
 selectScrollDown = +(selectScrollDown.substring(0, selectScrollDown.length - 2));
 selectScrollDown += timerScrollDown;
 
-startSelectBtn.addEventListener('change', function(){setTimeout(scrollPageTo('selectCheckSheet', 'selectScrollDown', timerScrollDown), 250)});
+selectBtn.addEventListener('change', function(){setTimeout(scrollPageTo('selectCheckSheet', 'selectScrollDown', timerScrollDown), 250)});
+
+
+
+
+
+
+// Scroll TakeCare
+
+// #lowbug #bug turning desktop from mobile in inspect, there is needing to refresh
+if(screen.width > '650'){
+    document.getElementById("takeCare").style.height = '350px';
+}else{
+    document.getElementById("takeCare").style.height = '550px';
+}
+
+let takeCareBtn = document.getElementById('takeCare');
+
+// later global use
+let takeCareScrollDown = document.getElementById("selectCheckSheet").style.height;
+takeCareScrollDown = +(takeCareScrollDown.substring(0, takeCareScrollDown.length - 2));
+takeCareScrollDown += selectScrollDown;
+
+takeCareBtn.addEventListener('click', function(){setTimeout(scrollPageTo('takeCare', 'takeCareScrollDown', selectScrollDown), 250)});
+
+
 
 
 
 // Scroll Iframe
 
-document.getElementById('loadIframe').style.height = '50px';
+document.getElementById('iframe').style.minHeight = '450px';
 
 let startIframeBtn = document.getElementById('loadIframe');
 
 // later global use
-let iframeScrollDown = document.getElementById("loadIframe").style.height;
+let iframeScrollDown = document.getElementById("iframe").style.minHeight;
 iframeScrollDown = +(iframeScrollDown.substring(0, iframeScrollDown.length - 2));
-iframeScrollDown += selectScrollDown;
+iframeScrollDown += takeCareScrollDown;
 
 // func called from above 'else' statement
+
+
 
 
 
@@ -85,10 +117,19 @@ insAnswScrollDown += iframeScrollDown;
 
 
 
+
+
+
+
+
 // Scroll Module Function (for Header, Timer, Select, Iframe, InsAnsw)  
 
 function scrollPageTo(selector, selectorScrollDown, prevSelectorScrollDown){
     let scrollDown = `${document.getElementById(selector).style.height}`;
+    // #review minHeight nuance disturbing
+    if(selector == 'iframe'){
+        scrollDown = `450px`;
+    }
     // scroll To
     scrollDown = scrollDown.substring(0, scrollDown.length - 2);
     scrollDown = +scrollDown + +prevSelectorScrollDown;
