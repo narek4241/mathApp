@@ -87,10 +87,10 @@
             box-sizing: border-box;
             justify-content: space-between;
         }
-            .sel_clear, .sel_random{
+            .sel_clear, .sel_random, .sel_scroll{
                 width: 49.85%;
             }
-                #clearSelect, #randomSelect{
+                #clearSelect, #randomSelect, #scrollSelect{
                     height: 35px;    
                     border: 0px;  
                     font-size: 12px;

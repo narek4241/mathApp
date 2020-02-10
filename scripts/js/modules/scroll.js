@@ -52,6 +52,10 @@ selectScrollDown += timerScrollDown;
 
 selectBtn.addEventListener('change', function(){setTimeout(scrollPageTo('selectCheckSheet', 'selectScrollDown', timerScrollDown), 250)});
 
+let scrollSelect = document.getElementById('scrollSelect');
+
+scrollSelect.addEventListener('click', function(){setTimeout(scrollPageTo('selectCheckSheet', 'selectScrollDown', timerScrollDown), 250)});
+
 
 
 

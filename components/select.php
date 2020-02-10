@@ -59,6 +59,9 @@
                 <div class="selDefStyle sel_random">
                     <button id="randomSelect" class="sub_selDefStyle">GENERATE</button>
                 </div>
+                <div class="selDefStyle sel_scroll">
+                    <button id="scrollSelect" class="sub_selDefStyle">SCROLL</button>
+                </div>
             </div>
         </div>
         
