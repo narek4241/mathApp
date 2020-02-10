@@ -22,8 +22,8 @@
     <?php include 'components/task-iframe.php'; ?>
     <?php // include 'components/toolbar.php'; ?>
     <?php include 'components/answers.php'; ?>
-    <?php include 'components/resultTable.php'; ?>
-    <?php include 'components/backToTop.php'; ?>
+    <?php include 'components/result-table.php'; ?>
+    <?php include 'components/back-to-top.php'; ?>
     <?php // include 'components/report.php'; ?>
     <?php include 'components/footer.php'; ?>
 
