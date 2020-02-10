@@ -3,7 +3,7 @@
 print("Will only compile")
 
 # main js
-filename = '../..' '/app.min.js'
+filename = '../..' '/app.min.css'
 new_file = open(filename, 'w')
 
 # modules js
