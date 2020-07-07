@@ -1,5 +1,18 @@
 "use strict";
 
+// Loader js
+
+window.addEventListener("load", function () {
+    let loader = document.getElementById('loader');
+    let body = document.querySelector('body');
+    let scrollbar = document.querySelector('::-webkit-scrollbar-track')
+    loader.className += " hidden";
+    // display none nuance (#lb avoided from bug, setting css in js)
+    setTimeout(function () { loader.style.display = "none"}, 1000);
+    setTimeout(function () { body.style.overflowY = "scroll"}, 500);
+});
+
+
 // Setting site-elements height
 
 // setting parameter of css (set site-element height) css var 

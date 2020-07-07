@@ -14,6 +14,10 @@
 </head>
 
 <body id="mainBody">
+    <div id="loader" class="loader">
+        <img src="images/loader.gif" alt="Loading ...">
+    </div>
+
     <?php include 'components/header.php'; ?>
     <?php include 'components/side-nav.php'; ?>
     <?php include 'components/timer.php'; ?>
