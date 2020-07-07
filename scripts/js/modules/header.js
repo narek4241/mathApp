@@ -1,15 +1,10 @@
 // Header height
 
-// Setting Header height to screen size 
-document.getElementById('header').style.height = `${innerHeight + 35}px`;
-
-// Rec-ing any changes of Header height screen size 
 window.addEventListener('resize', refreshHeaderHeight);
 
 function refreshHeaderHeight() {
-    document.getElementById('header').style.height = `${innerHeight + 35}px`;
+    // document.getElementById('header').style.height = `${innerHeight + 35}px`;
 }
-
 
 
 // NOTE THIS CODE IS DUPLICATE FROM 'SCROLL.JS' #duplicate
@@ -32,7 +27,7 @@ function refreshHeaderHeight() {
 headerGetStartedBtn.addEventListener('click', function () { blurilize('header') });
 
 function blurilize(elementId, prevElementId) {
-    document.getElementById(elementId).style.filter = 'blur(5px)';
+    // document.getElementById(elementId).style.filter = 'blur(5px)';
     if (prevElementId) {
         document.getElementById(prevElementId).style.filter = 'blur(0px)';
     }

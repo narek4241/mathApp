@@ -68,6 +68,10 @@
 3. master modals (replace dialogs)
 4. Report Nuance
 
+Season 2 
+
+5. add Loader
+
  -->
 
 <!-- Things to review -->

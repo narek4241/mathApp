@@ -15,7 +15,8 @@
         }
 .take-care{
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
+    height: var(--site-element-height);
     background-color: #fff;
     flex-direction: column;
     justify-content: center;

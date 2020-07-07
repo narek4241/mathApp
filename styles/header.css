@@ -12,7 +12,7 @@
         }
 .header{
     width: 100%;
-    /* height: by dom */
+    height: var(--site-element-height);
     flex-direction: column;
     animation: header_bg 10s linear 1;
     background: transparent url('../images/header1.jpg') no-repeat center;
@@ -62,6 +62,7 @@
             .headerNav__openFullscreen{
                 width: 15%;
                 justify-content: center;
+                /* position: fixed; */
             }
                 .sub_headerNav__openFullscreen{
                     width: 25%;

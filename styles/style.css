@@ -16,8 +16,16 @@ body{
 
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* overflow: hidden;(by dom)  */
+    /* overflow hidden by dom */
+    /* overflow: hidden; */
 }
+
+/* used when setting (every) site-element height */
+:root {
+    /* sets by dom screen.height */
+    --site-element-height: 100px;
+  }
+
 *{
     transition: .5s;
 }

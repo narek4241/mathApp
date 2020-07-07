@@ -12,7 +12,8 @@
         }
 .select{
     width: 100%;
-    height: 560px;
+    /* height: 560px; */
+    height: var(--site-element-height);
 }
         /* #selectCheckSheet{} */
     .select__main{
