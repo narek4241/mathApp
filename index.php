@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- media queries -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- animations -->
@@ -14,22 +13,26 @@
 </head>
 
 <body id="mainBody">
-    <div id="loader" class="loader">
-        <img src="images/loader.gif" alt="Loading ...">
-    </div>
+    <!-- <div class="container"> -->
+        <div id="loader" class="loader">
+            <img src="images/loader.gif" alt="Loading ...">
+        </div>
 
-    <?php include 'components/header.php'; ?>
-    <?php include 'components/side-nav.php'; ?>
-    <?php include 'components/timer.php'; ?>
-    <?php include 'components/select.php'; ?>
-    <?php include 'components/take-care.php'; ?>
-    <?php include 'components/task-iframe.php'; ?>
-    <?php // include 'components/toolbar.php'; ?>
-    <?php include 'components/answers.php'; ?>
-    <?php include 'components/result-table.php'; ?>
-    <?php include 'components/back-to-top.php'; ?>
-    <?php // include 'components/report.php'; ?>
-    <?php include 'components/footer.php'; ?>
+        <?php include 'components/header.php'; ?>
+        <?php include 'components/side-nav.php'; ?>
+        <?php include 'components/timer.php'; ?>
+        <?php include 'components/select.php'; ?>
+        <?php include 'components/take-care.php'; ?>
+        <?php include 'components/task-iframe.php'; ?>
+        <?php // include 'components/toolbar.php'; ?>
+        <?php include 'components/answers.php'; ?>
+        <?php include 'components/result-table.php'; ?>
+        <?php include 'components/back-to-top.php'; ?>
+        <?php // include 'components/report.php'; ?>
+        <?php include 'components/footer.php'; ?>
+    <!-- </div> -->
+
+
 
     <!-- Scripts -->
     <!-- static scripts -->

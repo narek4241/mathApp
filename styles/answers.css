@@ -18,15 +18,21 @@
         }
         
 .answers{
-    width: 100%;
+    /* width: 100%; */
+    /* width: var(--site-element-width); */
+    /* max-height: var(--site-element-height); */
+    /* height: auto; */
     /* min-height: 140px; */
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #424242;
     background-color: #181818;
-    margin-top: 5%;
+    background-color: lightblue;
+    /* margin-top: 5%; */
 }
     .answers__input{
         width: 90%;

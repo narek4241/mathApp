@@ -11,15 +11,23 @@
             height: 100%;
         }
 .header{
-    width: 100%;
-    height: var(--site-element-height);
+    /* width: var(--site-element-width); */
+    /* height: var(--site-element-height); */
+
     flex-direction: column;
     animation: header_bg 10s linear 1;
     background: transparent url('../images/header1.jpg') no-repeat center;
     background: transparent url('../images/pic02.jpg') no-repeat center;
     background-size: cover;
+    /* position: relative; */
+    
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     overflow: hidden;
-    /* filter: blur(50px); */
+    position: relative;
 }
     .header:hover{
         /* filter: blur(0px); */

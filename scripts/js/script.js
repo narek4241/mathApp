@@ -9,20 +9,26 @@ window.addEventListener("load", function () {
     loader.className += " hidden";
     // display none nuance (#lb avoided from bug, setting css in js)
     setTimeout(function () { loader.style.display = "none"}, 1000);
-    setTimeout(function () { body.style.overflowY = "scroll"}, 500);
+    setTimeout(function () { body.style.overflowY = "none"}, 500);
 });
 
 
 // Setting site-elements height
 
 // setting parameter of css (set site-element height) css var 
-document.documentElement.style.setProperty('--site-element-height', `${innerHeight + 35}px`);
+document.documentElement.style.setProperty('--all-site-element-width', `${8 * innerWidth}px`);
+document.documentElement.style.setProperty('--site-element-width', `${innerWidth}px`);
+document.documentElement.style.setProperty('--site-element-height', `${innerHeight}px`);
+
 
 // receiveing any changes of screen size height
-window.addEventListener('resize', refreshInnerHeight);
+window.addEventListener('resize', refreshInnerWidthHeight);
 
-function refreshInnerHeight() {
-    document.documentElement.style.setProperty('--site-element-height', `${innerHeight + 35}px`);
+function refreshInnerWidthHeight() {
+    console.log('resized (inner function)');
+    document.documentElement.style.setProperty('--all-site-element-width', `${8 * innerWidth}px`);
+    document.documentElement.style.setProperty('--site-element-width', `${innerWidth}px`);
+    document.documentElement.style.setProperty('--site-element-height', `${innerHeight}px`);
 }
 
 

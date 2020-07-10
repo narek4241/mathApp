@@ -16,7 +16,11 @@
 .take-care{
     width: 100%;
     /* height: 350px; */
-    height: var(--site-element-height);
+    /* width: var(--site-element-width); */
+    /* height: var(--site-element-height); */
+    width: 100vw;
+    height: 100vh;
+    
     background-color: #fff;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +104,9 @@
 
 @media (max-width: 650px){
     .take-care{
-        height: 550px;
+        /* height: 550px; */
+        opacity: 1;
+        /* opt. property (opacity) allowed to remove #odd */
     }
         .takeCare__heading{
             height: 25%;

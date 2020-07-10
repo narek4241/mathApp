@@ -32,9 +32,9 @@ function loadIframe(subjYearRep, pageNumber){
         iframeBtn.style.color = "#323232";
         // Scroll Iframe, when Closed
         // Checks whether scrollPageTo() def or not (scroll.js linked or not)
-        if(typeof scrollPageTo != 'undefined'){
-            setTimeout(scrollPageTo('iframe', 'iframeScrollDown', takeCareScrollDown), 250);
-        }
+        // if(typeof scrollPageTo != 'undefined'){
+        //     setTimeout(scrollPageTo('iframe', 'iframeScrollDown', takeCareScrollDown), 250);
+        // }
     }
 } 
 

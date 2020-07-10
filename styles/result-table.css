@@ -7,12 +7,17 @@
         box-sizing: border-box;
     }
 .resultTable{
-    width: 100%;
-    min-height: 200px;
-    height: auto;
+    /* width: 100%; */
+    /* min-height: 200px; */
+    /* width: var(--site-element-width); */
+    /* height: var(--site-element-height); */
+    /* height: auto; */
+    width: 100vw;
+    height: 100vh;
+    
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     /* background-color: rgba(10, 10, 10, 0.5); */
 }
     .resultTable__Btn{
