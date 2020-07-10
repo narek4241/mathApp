@@ -18,13 +18,14 @@
             <img src="images/loader.gif" alt="Loading ...">
         </div>
 
+        <?php include 'components/slide-navigation.php'; ?>
         <?php include 'components/header.php'; ?>
         <?php include 'components/side-nav.php'; ?>
         <?php include 'components/timer.php'; ?>
         <?php include 'components/select.php'; ?>
         <?php include 'components/take-care.php'; ?>
         <?php include 'components/task-iframe.php'; ?>
-        <?php // include 'components/toolbar.php'; ?>
+        <?php include 'components/toolbar.php'; ?>
         <?php include 'components/answers.php'; ?>
         <?php include 'components/result-table.php'; ?>
         <?php include 'components/back-to-top.php'; ?>
@@ -54,7 +55,7 @@
     <script src="scripts/js/modules/select.js"></script>
     <script src="scripts/js/modules/task-iframe.js"></script>
     <script src="scripts/js/modules/side-nav.js"></script>
-    <script src="scripts/js/modules/scroll.js"></script>
+    <script src="scripts/js/modules/slide-navigation.js"></script>
     <!-- modules (after compiling)-->
     <!-- <script src="app.min.js"></script> -->
 

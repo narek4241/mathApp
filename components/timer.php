@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <!-- controls -->
+    <?php //include 'components/slide-navigation.php'; ?>
+
     <div id="timerDialog" class="timDefStyle timer_dialog">
         <dialog class="sub_timer_dialog" open>Please turn the timer <i>ON</i></dialog>
     </div>

@@ -18,14 +18,8 @@
         }
         
 .answers{
-    /* width: 100%; */
-    /* width: var(--site-element-width); */
-    /* max-height: var(--site-element-height); */
-    /* height: auto; */
-    /* min-height: 140px; */
     width: 100vw;
     height: 100%;
-
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +27,8 @@
     background-color: #181818;
     background-color: lightblue;
     /* margin-top: 5%; */
+    position: absolute;
+    z-index: 3;
 }
     .answers__input{
         width: 90%;

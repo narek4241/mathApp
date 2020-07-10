@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="selDefStyle select">
+    <div id="select" class="selDefStyle select">
         <div id="selectCheckSheet" class="selDefStyle selectCheckSheet select__main">
             <div class="selDefStyle sel__heading">
                 <div class="sub_selDefStyle sub_sel__heading">SELECT THEM</div>

@@ -14,13 +14,10 @@
             align-items: center;
         }
 .take-care{
-    width: 100%;
-    /* height: 350px; */
-    /* width: var(--site-element-width); */
-    /* height: var(--site-element-height); */
     width: 100vw;
     height: 100%;
-
+    position: absolute;
+    z-index: 5;
     background-color: #fff;
     flex-direction: column;
     justify-content: center;

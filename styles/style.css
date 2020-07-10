@@ -1,38 +1,34 @@
 html{
-    scroll-behavior: smooth;
-    /* filter: invert(100%); */
-    /* background-color:#001; */
-
-    overflow: hidden;
     height: 100vh;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    /* filter: invert(100%); */
+    /* background-color:#001; */
+    overflow: hidden;
 }
 body{
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #1a1a1a;
     background-size: cover;
     /* background-image: url(../images/b1.jpg); */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
-    margin: 0;
-    height: 100%;
-
     overflow-x: scroll;
-    /* overflow hidden by dom - chech if present - remove*/
 }
     .container{
         width: auto;
         height: 100%;
     	position: relative;
-        /* position: absolute; */
     	display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	/* flex-direction: row; */
 		flex-direction: column;
         flex-wrap: wrap;
+    	justify-content: center;
+    	align-items: center;
     }
-
+        
+    
 
 /* used when setting (every) site-element height */
 :root {

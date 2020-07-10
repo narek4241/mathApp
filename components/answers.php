@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="answDefStyle answers">
+    <div id="answers" class="answDefStyle answers">
         <div class="answDefStyle answers__input">
             <div class="answDefStyle answInput__btn">
                 <button id="answerInputBtn"><i>Insert</i> Answers</button>

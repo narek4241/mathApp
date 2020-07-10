@@ -11,19 +11,17 @@
             height: 100%;
         }
 .header{
-    /* width: var(--site-element-width); */
-    /* height: var(--site-element-height); */
-
+    width: 100vw;
+    height: 100%;
     flex-direction: column;
     animation: header_bg 10s linear 1;
     background: transparent url('../images/header1.jpg') no-repeat center;
     background: transparent url('../images/pic02.jpg') no-repeat center;
     background-size: cover;
     /* position: relative; */
-    
-    width: 100vw;
-    height: 100%;
-
+    position: absolute;
+    z-index: 8;
+    /* animation: site-page-anim 10s forwards 1; */
 }
     .header:hover{
         /* filter: blur(0px); */

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="footer">
+    <div id="footer" class="footer">
         <div class="footer_copyright_author">
             <div class="fELem0 copyright">
                 <div class="sub_fElem0 sub_copyright">

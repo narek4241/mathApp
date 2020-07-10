@@ -11,12 +11,10 @@
             height: 100%;
         }
 .select{
-    /* width: 100%; */
-    /* height: 560px; */
-    /* width: var(--site-element-width); */
-    /* height: var(--site-element-height); */
     width: 100vw;
     height: 100%;
+    position: absolute;
+    z-index: 6;
 }
         /* #selectCheckSheet{} */
     .select__main{
