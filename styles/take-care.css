@@ -19,8 +19,8 @@
     /* width: var(--site-element-width); */
     /* height: var(--site-element-height); */
     width: 100vw;
-    height: 100vh;
-    
+    height: 100%;
+
     background-color: #fff;
     flex-direction: column;
     justify-content: center;

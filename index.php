@@ -13,7 +13,7 @@
 </head>
 
 <body id="mainBody">
-    <!-- <div class="container"> -->
+    <div class="container">
         <div id="loader" class="loader">
             <img src="images/loader.gif" alt="Loading ...">
         </div>
@@ -30,7 +30,7 @@
         <?php include 'components/back-to-top.php'; ?>
         <?php // include 'components/report.php'; ?>
         <?php include 'components/footer.php'; ?>
-    <!-- </div> -->
+    </div>
 
 
 

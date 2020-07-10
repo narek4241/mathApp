@@ -15,7 +15,7 @@
     /* width: var(--site-element-width); */
     /* min-height: var(--site-element-height); */
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
     background-color: #181818;
     flex-direction: column;

@@ -7,15 +7,15 @@ window.scrollTo(1, 0);
 
 
 // receiveing any changes of screen size height => changes of elementScrollDown
-window.addEventListener('resize', refreshElemScrollNext);
+// window.addEventListener('resize', refreshElemScrollNext);
 
-function refreshElemScrollNext() {
-    headerScrollNext = innerWidth;
-    timerScrollNext = innerWidth;
-    selectScrollNext = innerWidth;
-    takeCareScrollNext = innerWidth;
-    iframeScrollNext = innerWidth;
-}
+// function refreshElemScrollNext() {
+//     headerScrollNext = innerWidth;
+//     timerScrollNext = innerWidth;
+//     selectScrollNext = innerWidth;
+//     takeCareScrollNext = innerWidth;
+//     iframeScrollNext = innerWidth;
+// }
 
 // Scroll Header
 
@@ -27,6 +27,7 @@ let headerScrollNext = innerWidth;
 
 headerGetStartedBtn.addEventListener('click', function () {
     window.scrollTo(headerScrollNext, 0);
+    window.scrollTo(100, 100);
 });
 
 

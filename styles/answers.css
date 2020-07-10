@@ -24,7 +24,7 @@
     /* height: auto; */
     /* min-height: 140px; */
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
     flex-direction: column;
     justify-content: space-between;

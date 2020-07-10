@@ -12,16 +12,14 @@
         }
 
 #timer{
-    width: var(--site-element-width);
-    height: var(--site-element-height);
+    /* width: var(--site-element-width); */
+    /* height: var(--site-element-height); */
     /* position: absolute; */
     /* top: 0; */
     /* left: 100vw; */
     width: 100vw;
-    height: 100vh;
-    /* position: absolute; */
-    /* top: 0; */
-    /* overflow: hidden; */
+    height: 100%;
+
 }
 .timer_dialog{
     width: 100%;

@@ -13,8 +13,8 @@
     /* height: var(--site-element-height); */
     /* height: auto; */
     width: 100vw;
-    height: 100vh;
-    
+    height: 100%;
+
     flex-direction: column;
     justify-content: space-between;
     /* margin-top: 5%; */

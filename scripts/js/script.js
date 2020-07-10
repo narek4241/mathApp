@@ -13,24 +13,8 @@ window.addEventListener("load", function () {
 });
 
 
-// Setting site-elements height
-
-// setting parameter of css (set site-element height) css var 
-document.documentElement.style.setProperty('--all-site-element-width', `${8 * innerWidth}px`);
-document.documentElement.style.setProperty('--site-element-width', `${innerWidth}px`);
-document.documentElement.style.setProperty('--site-element-height', `${innerHeight}px`);
-
-
 // receiveing any changes of screen size height
-window.addEventListener('resize', refreshInnerWidthHeight);
-
-function refreshInnerWidthHeight() {
-    console.log('resized (inner function)');
-    document.documentElement.style.setProperty('--all-site-element-width', `${8 * innerWidth}px`);
-    document.documentElement.style.setProperty('--site-element-width', `${innerWidth}px`);
-    document.documentElement.style.setProperty('--site-element-height', `${innerHeight}px`);
-}
-
+// window.addEventListener('resize', refreshInnerWidthHeight);
 
 
 // Declaring arrays
